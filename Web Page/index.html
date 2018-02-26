@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Room Draw 2018</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="frontPage.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div id="homeButton"> <a href="index.html">
+ <button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Home</button> </a>
+</div>
+
+<div id="dash"> <a href="dashboard.html"> 
+ <button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Dashboard</button> </a>
+</div>
+
+<div class="jumbotron">
+  <div class="container text-center">
+<div id="title">
+<h1>{{message}}</h1>
+</div>
+</div>
+</div>
+
+<div id= "appButton"><a href="applications.html"> 
+<button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Applications</button> </a>
+</div>
+
+<div id= "mapsButton">
+<button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Housing Maps</button>
+</div>
+
+
+<div id= "rulesButton">
+<button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Room Draw Rules</button>
+</div>
+
+<img src="file:///Users/ashleyellis/Documents/spring%202018/capstone/Web%20Page/18214573503_08211228a0_o.jpg" width="2000" height="250" align="right">
+
+<div class="IntroMessage">
+
+<p class="text-center"> Lorem ipsum dolor sit amet, eos eu idque atomorum, has erat minim facilisi ne. Sea error inermis ad, elit intellegebat an his. Ex natum congue consetetur nec. Sea ea novum fierent. Dictas antiopam eu ius, et choro voluptatibus vim, mea at nonumy appareat.    </p>
+<hr />
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src ="https://unpkg.com/vue"></script>
+
+
+<script type="text/javascript">
+
+	var Home = new Vue({ //make a new Vue 
+		el: "#homeButton",
+		methods: {
+			submit: function(){
+
+			}
+		}
+	})
+	var App = new Vue({ //make a new Vue 
+		el: "#title",
+		data: {
+			message: "Eckerd College Room Draw 2018"
+		}
+	})
+
+
+	var DashBoardButton = new Vue({ //make a new Vue 
+		el: "#dash",
+		methods: {
+			submit: function(){
+
+			}
+		}
+		
+	})
+
+	var ApplicationsButton = new Vue({ //make a new Vue 
+		el: "#appButton",
+		methods: {
+			submit: function(){
+
+			}
+		}
+	})
+
+	var MapsButton = new Vue({ //make a new Vue 
+		el: "#mapsButton",
+		methods: {
+			submit: function(){
+
+			}
+		}
+	})
+
+	var RulesButton = new Vue({ //make a new Vue 
+		el: "#rulesButton",
+		methods: {
+			submit: function(){
+
+			}
+		}
+	})
+
+
+
+
+
+	;
+
+</script>
+</html>

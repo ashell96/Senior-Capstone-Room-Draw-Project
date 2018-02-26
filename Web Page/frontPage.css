@@ -1,0 +1,55 @@
+body{
+	background-color: rgb(255, 255, 255);
+
+}
+h1{
+	font-size: 50px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	font-family: Georgia, Times, serif;
+	color: rgb(126, 177, 183);
+
+}
+
+img {
+  object-fit: cover;
+  padding-top: 7px;
+  background-color: rgb(123, 189, 196);
+
+}
+
+#homeButton{
+	position: absolute;
+	font-family: Georgia;
+	top:80%;
+}
+
+#dash {
+	position: absolute;
+	font-family: Georgia;
+	top: 90%;
+}
+
+
+#appButton {
+	position: absolute;
+	font-family: Georgia;
+	top: 100%;
+}
+#mapsButton {
+	position: absolute;
+	font-family: Georgia;
+	top: 110%;
+}
+
+#rulesButton {
+	position: absolute;
+	font-family: Georgia;
+	top: 120%;
+	padding-bottom: 60px;
+}
+
+.IntroMessage{
+	padding-right: 20px;
+	padding-left: 350px;
+}
