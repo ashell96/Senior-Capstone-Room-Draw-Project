@@ -1,0 +1,64 @@
+[{
+    student_id: 1274132,
+    first_name: 'Wilbur',
+    last_name: 'Daniels',
+    class_standing: 3,
+    email: 'rlbcerger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274222,
+    first_name: 'Ray',
+    last_name: 'Berger',
+    class_standing: 3,
+    email: 'rlberger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274357,
+    first_name: 'Joanne',
+    last_name: 'Simon',
+    class_standing: 3,
+    email: 'rlberager@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274456,
+    first_name: 'Woodrow',
+    last_name: 'Armstrong',
+    class_standing: 3,
+    email: 'rlbearger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274653,
+    first_name: 'Craig',
+    last_name: 'Reynolds',
+    class_standing: 3,
+    email: 'rlbedrger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274735,
+    first_name: 'Dewey',
+    last_name: 'Holt',
+    class_standing: 3,
+    email: 'rlbergaer@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274765,
+    first_name: 'Wilbert',
+    last_name: 'Mendoza',
+    class_standing: 3,
+    email: 'rlbeerger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+},
+  RowDataPacket {
+    student_id: 1274768,
+    first_name: 'Bethany',
+    last_name: 'Moss',
+    class_standing: 3,
+    email: 'rlbereger@eckerd.edu',
+    phone: '1 800 411 PAIN'
+}]

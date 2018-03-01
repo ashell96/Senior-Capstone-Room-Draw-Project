@@ -1,0 +1,135 @@
+{
+    "terms": [
+        {
+            "term_code": 20162,
+            "term_name": "Spring 2016 Room Draw"
+        },
+        {
+            "term_code": 20172,
+            "term_name": "Spring 2017 Room Draw"
+        }
+    ],
+    "students": [
+        {
+            "student_id": 1274132,
+            "first_name": "Wilbur",
+            "last_name": "Daniels",
+            "class_standing": 3,
+            "email": "rlbcerger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274222,
+            "first_name": "Ray",
+            "last_name": "Berger",
+            "class_standing": 3,
+            "email": "rlberger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274357,
+            "first_name": "Joanne",
+            "last_name": "Simon",
+            "class_standing": 3,
+            "email": "rlberager@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274456,
+            "first_name": "Woodrow",
+            "last_name": "Armstrong",
+            "class_standing": 3,
+            "email": "rlbearger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274653,
+            "first_name": "Craig",
+            "last_name": "Reynolds",
+            "class_standing": 3,
+            "email": "rlbedrger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274735,
+            "first_name": "Dewey",
+            "last_name": "Holt",
+            "class_standing": 3,
+            "email": "rlbergaer@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274765,
+            "first_name": "Wilbert",
+            "last_name": "Mendoza",
+            "class_standing": 3,
+            "email": "rlbeerger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "student_id": 1274768,
+            "first_name": "Bethany",
+            "last_name": "Moss",
+            "class_standing": 3,
+            "email": "rlbereger@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        }
+    ],
+    "rooms": [
+        {
+            "complex": "Alpha",
+            "house": "Gershwin",
+            "room_number": "22"
+        },
+        {
+            "complex": "Beta",
+            "house": "Darwin",
+            "room_number": "11"
+        },
+        {
+            "complex": "Omega",
+            "house": "",
+            "room_number": "101"
+        },
+        {
+            "complex": "Omega",
+            "house": "",
+            "room_number": "103"
+        }
+    ],
+    "applications": [
+        {
+            "app_id": 1,
+            "app_name": "Squatting Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "squatting",
+            "app_term": 20172
+        },
+        {
+            "app_id": 2,
+            "app_name": "Omega Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "omega",
+            "app_term": 20172
+        }
+    ],
+    "submissions": [
+        {
+            "submission_id": 1,
+            "primary_student_id": 1274222,
+            "submission_date": "2018-02-26T01:48:04.000Z",
+            "app_id": 1,
+            "room": "alpha beta 3",
+            "roommate1_email": "myroomie@eckerd.edu",
+            "roommate2_email": null,
+            "roommate3_email": null,
+            "roommate4_email": null,
+            "roommate5_email": null,
+            "roommate6_email": null,
+            "roommate7_email": null,
+            "sub_status": "pending"
+        }
+    ]
+}
