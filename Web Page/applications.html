@@ -75,9 +75,13 @@
   </p>
 
   <p>
-    <input type="submit" value="Submit">  
+    <input type="submit" value="Submit" onclick="document.getElementById('hello').style.display = 'block' ;">  
   </p>
 
+</form>
+
+<form id="hello">
+  
 </form>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -100,9 +104,12 @@ const app = new Vue({
     checkForm:function(e) {
       if(this.name && this.age && this.sID) return true;
       this.errors = [];
-      if(!this.name) this.errors.push("Name required.");
-      if(!this.sid) this.errors.push("Student ID required.");
-      if(!this.age) this.errors.push("Age required.");
+      if(!this.name) 
+        this.errors.push("Name required.");
+      if(!this.sid) 
+        this.errors.push("Student ID required.");
+      if(!this.age) 
+        this.errors.push("Age required.");
       e.preventDefault();
     }
   }
