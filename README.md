@@ -7,4 +7,8 @@ A UML Diagram modeling the data of our project is available [here](https://githu
 
 To view it, download the diagram and open it on https://draw.io
 
-## [Tentative Schedule](https://github.com/Eckerd-CS-Capstone/Sandpiper/blob/master/documents/schedule.md)
+## Relevant Documents
+* [Tentative Schedule](/documents/schedule.md)
+* [Design Document](/documents/design.pdf)
+* [Requirements Document](/documents/requirements.pdf)
+* [Database Setup Document](/documents/sql.md)
