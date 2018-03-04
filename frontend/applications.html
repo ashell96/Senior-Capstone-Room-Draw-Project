@@ -1,6 +1,27 @@
 <html>
 <head>
+
+<script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js"></script>    
+
+
+<!= function to get information from JSON file and verify>
+<script>
+    $(function showLength() {
+
+   $.getJSON('everything.json', function(data) {
+      console.log(data);
+       var studentID = JSON.parse(result);
+       alert(studentID.length)
+      
+
+   };
+
+});
+</script>
+
 	<title>Applications</title>
+
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,56 +54,241 @@
 <button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Housing Maps</button>
 </div>
 
-
 <div id= "rulesButton">
 <button v-on:click = "submit" type="button" class="btn btn-info btn-lg">Room Draw Rules</button>
 </div>
 
 
-<form id="app" @submit="checkForm" action="https://vuejs.org/" method="post" align = "center">
-  
-  <p v-if="errors.length">
-    <b>Please correct the following error(s):</b>
-    <ul>
-      <li v-for="error in errors">{{ error }}</li>
-    </ul>
-  </p>
+
+<!=  onsubmit="chooseForm(); return false;" novalidate="true" "> 
+<!- clicking submit runs the checkForm function ->
+<form id="newForm" action="" method="post" align = "center" onsubmit="validateInput() ; return false;"" > 
   
   <p>
     <label for="name">Name<label>
-    <input type="text" name="name" id="name" v-model="name">
+    <input type="text" name="name" id="Rname">
   </p>
     <p>
     <label for="name">Student ID<label>
-    <input type="number" name="ID" id="ID" v-model="ID">
+    <input type="number" name="ID" id="RID">
   </p>
 
   <p>
-    <label for="age">Age<label>
-    <input type="number" name="age" id="age" v-model="age" min="0">
-  </p>
-
-  <p>
-    <label for="movie">Housing Form: <label>
-    <select name="movie" id="movie" v-model="movie">
-      <option>Omega(Co-Ed/Animal Friendly)</option>
-      <option>Nu Application (Co-Ed/Animal Friendly)</option>
-      <option>Traditional Housing</option>
-      <option>Off-Campus Alta Mar</option>
-      <option>Squatting</option>
-
+    <label for="housing">Housing Form: </label>
+    <select name="housing" id="housing" v-model="Housing">
+      <option id="OmegaChoice">Omega(Co-Ed/Animal Friendly)</option>
+      <option id ="NuChoice">Nu Application (Co-Ed/Animal Friendly)</option>
+      <option id="TraditionalChoice">Traditional Housing</option>
+      <option id="OffCampusChoice">Off-Campus Alta Mar</option>
+      <option id="SquattingChoice">Squatting</option>
     </select>
   </p>
+<p>
+  <input type="submit" value="Submit"> 
+</p>
 
-  <p>
-    <input type="submit" value="Submit" onclick="document.getElementById('hello').style.display = 'block' ;">  
-  </p>
+<script type="text/javascript">
+  function validateInput(){
+    if (document.getElementById("Rname").value=="" || document.getElementById("RID").value==""){
+      alert("Please provide your name or ID.");
+      return false;  
+      }
+    else if (document.getElementById("RID").value.length != 7){
+        alert("Error: Incorrect ID length");
+        return false;
+   }
+
+    chooseForm();
+
+
+  }
+
+</script>
+
+  <script type="text/javascript">
+      function chooseForm(){
+
+      if(document.getElementById("OmegaChoice").selected ==true){
+            document.getElementById("Omega").style.display = "block";
+      }
+      if(document.getElementById("NuChoice").selected ==true){
+        document.getElementById("Nu").style.display = "block";
+      }
+      if(document.getElementById("TraditionalChoice").selected ==true){
+        document.getElementById("Traditional").style.display = "block";
+      }
+      if(document.getElementById("SquattingChoice").selected ==true){
+        document.getElementById("Squatting").style.display = "block";
+      }
+      if(document.getElementById("OffCampusChoice").selected ==true){
+        document.getElementById("OffCampus").style.display = "block";
+      }
+
+
+    }
+    
+  </script>
 
 </form>
 
-<form id="hello">
-  
+<form id = "Omega" method="post" align = "center" style = "display: none"> 
+<div class ="omegaBold">
+<br>
+<br>
+<br>
+<br>
+<h1>Omega Application(Co-Ed/Animal Friendly)</h1>
+<h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
+<h5>Please complete this application and submit it no later than 12 Noon Monday, March 20, 2018</h5>
+<h5><u>Late Applications WILL NOT be accepted.</u></h5>
+<br>
+<p>After Room Draw, if one member withdraws from the unit, the remaining members will be given the option to fill the space with another person of equal or greater point value within five business days. If after five business days the vacant space has not been filled, the remaining students <u>will lose</u> the right to occupy the unit. When two or more persons withdraw, at any time, from the unit the remaining members <u>will lose</u> the right to occupy the unit.</p> 
+</div>
+<br>
+<p><i>All Omega Suites are eligible to be co-ed per application rules. The Office of Residence Life reserves the right to decline residency before and after room draw based on relevant disciplinary record or history of room or dorm damange, and outstanding financial balance on the student's account. </i></p>
+<br>
+<h4 class="omegaBold"><u>Please complete the following section:</u></h4>
+<br>
+<h5 class="omegaBold">CHOOSE ONE: </h5>
+<br>
+<h5><input type="radio" name = "Option" value="TwoDouble" class="omegaBold"><u> 2 DOUBLE ROOM APARTMENT</u></h5>
+<h5><input type="radio" name = "Option" value= "FourSingle" class="omegaBold"><u> 4 SINGLE ROOM APARTMENT</u></h5>
+<h5><input type="radio" name= "Option" value="FivePerson" class="omegaBold"><u> 5 PERSON APARTMENT (2 Double Rooms and 1 Single Room</u></h5>
+<br>
+<p>Roomate 1 Name: 
+<input type="text" name="Roommate1"> </p>
+<p>Roomate 1 ID: 
+<input type="text" name="Roommate1"> </p>
+<p>Roomate 1 Cell #: 
+<input type="text" name="Roommate1"> </p>
+
+
 </form>
+
+<form id = "Nu" method="post" align = "center" style = "display: none"> 
+<br>
+<br>
+<br>
+<br>
+<h1>Nu Application(Co-Ed/Animal Friendly)</h1>
+<h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
+<h5>Please complete this application and submit it no later than 12 Noon Monday, April 3, 2018</h5>
+<h5><u>Late Applications WILL NOT be accepted.</u></h5>
+<br>
+<p>After Room Draw, if one member withdraws from the unit, the remaining members will be given the option to fill the space with another person of equal or greater point value within five business days. If after five business days the vacant space has not been filled, the remaining students <u>will lose</u> the right to occupy the unit. When two or more persons withdraw, at any time, from the unit the remaining members <u>will lose</u> the right to occupy the unit.</p>
+<br>
+<p><i>*All Nu Suites are eligible to be co-ed per application rules. The Office of Residence Life reserves the right to decline residency before and after room draw based on relevant disciplinary record or history of room or dorm damange, and outstanding financial balance on the student's account.</i></p>
+<br>
+<p class="omegaBold"><u><i>**Once submitted, this form may not be changed. Please make sure to check CURRENT class standing of all applicants because if ANY one member is denied participation, the entire group will be denied participation. NO EXCEPTIONS WILL BE MADE.</i></u></p>
+<br>
+<h4><u>Please complete the following section:</u></h4>
+<br>
+<p>Roomate 1 Name: 
+<input type="text" name="Roommate1"> </p>
+<p>Roomate 1 ID: 
+<input type="number" name="Roommate1"> </p>
+<p>Roomate 1 Cell #: 
+<input type="text" name="Roommate1"> </p>
+
+</form>
+
+<form id = "Squatting" method="post" align = "center" style = "display: none"> 
+<br>
+<br>
+<br>
+<br>
+<h1>Squatting Application</h1>
+<h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
+<h5>Please complete this application and submit it no later than 12 Noon Monday, March 20, 2018</h5>
+<h5><u>Late Applications WILL NOT be accepted.</u></h5>
+<br>
+<p class="omegaBold">Singles, Nu, Oberg Suites, and Omega Suites are not eligible to be squatted. If you squat your room, you may not participate in any other aspect of Room Draw. If your planned roommate is different from the name of your current roommate, we MUST receive an email from your current roommate, via their EC email account, releasing him/her from control of the room. If both you and your current roommate want to squat your current room, with an alternate roommate, both of you will lose squatting rights to the room and must go through Room Draw with your planned roommate.</p>
+<br>
+<h4><u>Provide information for both you and your planned roommate:</u></h4>
+<br>
+<p>Room Squatting for 2018-2019 Academic Year:
+<input type="text" name="RoomSquatting"> </p>
+<p>Roommate 1 Name:
+<input type="text" name="Roommate1Name"> </p>
+<p>Roommate 2 Name:
+<input type="text" name="Roommate2Name"> </p>
+<p>Roommate 1 ID#:
+<input type="number" name="Roommate1ID"> </p>
+<br>
+<p>Roommate 2 ID#:
+<input type="number" name="Roommate2ID"> </p>
+<p>Roommate 1 Current Room Assignment:
+<input type="text" name="Roommate1Assignment"> </p>
+<p>Roommate 2 Current Room Assignment:
+<input type="text" name="Roommate2Assignment"> </p>
+<p>Roommate 1 Signature:</p>
+<p>Roommate 2 Signature:</p>
+</form>
+
+<form id = "Traditional" method="post" align = "center" style = "display: none">
+<br>
+<br>
+<br>
+<br>
+<h1>Traditional Housing Application</h1>
+<h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
+<br>
+<h5>Please complete this application and submit it no later than 12 Noon Monday, April 10, 2018</h5>
+<h5><u>Late Applications WILL NOT be accepted.</u></h5>
+<br>
+<p class="omegaBold">This application is for students wanting to reside in any of our seven traditional complexes (Alpha, Beta, Gamma, Delta, Epsilon, Kappa, and Zeta) as well as Iota.</p>
+<br>
+<h4><u>Provide information for both you and your planned roommate:</u></h4>
+<br>
+<p>Roommate 1 Name:
+<input type="text" name="Room1Name"> </p>
+<p>Roommate 2 Name:
+<input type="text" name="Room2Name"> </p>
+<p>Roommate 1 ID#:
+<input type="number" name="Room1ID"> </p>
+<br>
+<p>Roommate 2 ID#:
+<input type="number" name="Room2ID"> </p>
+<p>Roommate 1 Current Room Assignment:
+<input type="text" name="Room1Assignment"> </p>
+<p>Roommate 2 Current Room Assignment:
+<input type="text" name="Room2Assignment"> </p>
+<p>Roommate 1 Signature:</p>
+<p>Roommate 2 Signature:</p>
+</form>
+
+<form id = "OffCampus" method="post" align = "center" style = "display: none"> 
+<br>
+<br>
+<br>
+<br>
+<h1>Off-Campus Alta Mar Application</h1>
+<h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
+<br>
+<h5>Please complete this application and submit it no later than 12 Noon Wednesday, May 10, 2018</h5>
+<h5><u>Late Applications WILL NOT be accepted.</u></h5>
+<br>
+<p><i>These unites will be townhome stle, two bedroom, two and a half bath, four person suietes (2 students per bedroom) with a full-kitchen, living room and study. Furniture, power, water, sewage, Internet, cable, and any other utilities are included. Laundry facilities are on sit in the complex.</i></p>
+<img src="image.png" width="400" height="300" align="center">
+<br>
+<p><i>**The Division of Student Life reserves the right to decline residency before and after room draw based on relevant disciplinary record or history of room or dorm damange, and outstanding financial balance on the student's account.</i></p>
+<br>
+<h4><u>Please complete the following section:</u></h4>
+<br>
+<h5 class="omegaBold">CHOOSE ONE: </h5>
+<br>
+<h5><input type="radio" name="Options" value = "Renovated" class="omegaBold"><u> Renovated Apartment</u></h5>
+<h5><input type="radio" name="Options"  value = "Standard" class="omegaBold"><u> Standard Apartment</u></h5>
+<br>
+<p>Roommate 1 Name:
+<input type="text" name="Roommate1Name"> </p>
+<p>Roommate 2 Name:
+<input type="text" name="Roommate2Name"> </p>
+<p>Roommate 1 ID#:
+<input type="number" name="Roommate1ID"> </p>
+<br>
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -96,24 +302,26 @@ const app = new Vue({
   data:{
     errors:[],
     name:null,
-    age:null,
-    sid: null,
-    movie:null
+    ID: null,
+    movie: null,
+    Housing: null,
+    seen: true;
+
   },
   methods:{
     checkForm:function(e) {
-      if(this.name && this.age && this.sID) return true;
+      if(this.name && this.sID) return true;
       this.errors = [];
       if(!this.name) 
         this.errors.push("Name required.");
-      if(!this.sid) 
+      if(!this.ID) 
         this.errors.push("Student ID required.");
-      if(!this.age) 
-        this.errors.push("Age required.");
       e.preventDefault();
     }
   }
 })
+
+
 
 </script>
 
