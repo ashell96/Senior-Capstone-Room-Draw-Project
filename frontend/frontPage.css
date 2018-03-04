@@ -13,8 +13,9 @@ h1{
 
 img {
   object-fit: cover;
-  padding-top: 7px;
-  background-color: rgb(123, 189, 196);
+  padding-top: 5px;
+  padding-bottom: 3px;
+  background-color: rgb(255, 255, 255);
 
 }
 
@@ -46,10 +47,13 @@ img {
 	position: absolute;
 	font-family: Georgia;
 	top: 120%;
-	padding-bottom: 60px;
 }
 
 .IntroMessage{
 	padding-right: 20px;
 	padding-left: 350px;
 }
+#eckerdIcon{
+	ima
+}
+
