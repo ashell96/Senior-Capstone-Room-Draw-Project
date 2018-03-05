@@ -1,11 +1,16 @@
-# Database Configuration
+# Run this to setup the database
 
-## Setup Tables
 
-```sql
 DROP DATABASE housing;
 CREATE DATABASE housing;
 USE housing;
+
+CREATE TABLE room (
+  complex VARCHAR(20) NOT NULL,
+  house VARCHAR(20) NOT NULL,
+  room_number VARCHAR(20) NOT NULL,
+  PRIMARY KEY (complex,house,room_number)
+);
 
 CREATE TABLE term (
     term_code INT NOT NULL PRIMARY KEY, # usually 20171, 20172, 20173, 20181, etc
@@ -37,25 +42,11 @@ CREATE TABLE submission (
   submission_date DATETIME NOT NULL DEFAULT NOW(),
   app_id INT NOT NULL, 
   room VARCHAR(30),
-  roommate1_email VARCHAR(30),
-  roommate2_email VARCHAR(30),
-  roommate3_email VARCHAR(30),
-  roommate4_email VARCHAR(30),
-  roommate5_email VARCHAR(30),
-  roommate6_email VARCHAR(30),
-  roommate7_email VARCHAR(30),
   sub_status VARCHAR(30),
   FOREIGN KEY (primary_student_id) REFERENCES student(student_id),
   FOREIGN KEY (app_id) REFERENCES application(app_id)
 );
 
-
-CREATE TABLE room (
-  complex VARCHAR(20) NOT NULL,
-  house VARCHAR(20) NOT NULL,
-  room_number VARCHAR(20) NOT NULL,
-  PRIMARY KEY (complex,house,room_number)
-);
 
 CREATE TABLE request (
   request_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -68,11 +59,16 @@ CREATE TABLE request (
   FOREIGN KEY (submission_id) REFERENCES submission(submission_id)
 );
 
+CREATE TABLE submissions_requests (
+    submission_id INT NOT NULL,
+    request_id INT NOT NULL,
+    FOREIGN KEY (submission_id) REFERENCES submission(submission_id),
+    FOREIGN KEY (request_id) REFERENCES request(request_id)
+);
 
-```
 
-## Add data
-```sql
+## Test data
+
 
 INSERT INTO term VALUES (20172, "Spring 2017 Room Draw");
 INSERT INTO term VALUES (20162, "Spring 2016 Room Draw");
@@ -97,13 +93,20 @@ INSERT INTO room VALUES ("Omega","","103");
 INSERT INTO room VALUES ("Alpha","Gershwin","22");
 INSERT INTO room VALUES ("Beta","Darwin","11");
 
-INSERT INTO submission (primary_student_id, app_id, room, roommate1_email, sub_status )
-VALUES (1274222, 1, "alpha beta 3", "myroomie@eckerd.edu","pending");
+INSERT INTO submission (primary_student_id, app_id, room, sub_status)
+VALUES (1274222, 1, "Alpha Beta 3", "pending");
+INSERT INTO submission (primary_student_id, app_id, room, sub_status)
+VALUES (1274768, 1, "Omega 300", "pending");
+INSERT INTO submission (primary_student_id, app_id, room, sub_status)
+VALUES (1274765, 1, "Kappa Morris 1", "pending");
 
-```
+INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
+VALUES (1274222, 1274132, 1, "pending");
+INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
+VALUES (1274768, 1274735, 1, "pending");
+INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
+VALUES (1274765, 1274456, 1, "pending");
 
-## Useful Commands
-SHOW DATABASES;
-USE housing;
-SHOW TABLES;
-DROP DATABASE housing;
+INSERT INTO submissions_requests VALUES (1,1);
+INSERT INTO submissions_requests VALUES (2,2);
+INSERT INTO submissions_requests VALUES (3,3);
