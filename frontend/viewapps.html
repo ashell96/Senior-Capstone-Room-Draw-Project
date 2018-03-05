@@ -1,0 +1,38 @@
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <div id="editor">
+        <ul id="example-1">
+            <li v-for="item in applications">
+              {{ item.app_type }}
+            </li>
+          </ul>
+      </div>
+
+</html>
+
+<script>
+    new Vue({
+  el: '#editor',
+  data: {
+    "applications": [
+        {
+            "app_id": 1,
+            "app_name": "Squatting Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "squatting",
+            "app_term": 20172
+        },
+        {
+            "app_id": 2,
+            "app_name": "Omega Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "omega",
+            "app_term": 20172
+        }
+    ]
+  }
+})
+</script>
