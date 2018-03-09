@@ -1,22 +1,17 @@
 <html>
 <head>
 
-<script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js"></script>    
 
-
-<!= function to get information from JSON file and verify>
+<!-- function to get information from JSON file and verify-->
 <script>
-    $(function showLength() {
-
-   $.getJSON('everything.json', function(data) {
-      console.log(data);
-       var studentID = JSON.parse(result);
-       alert(studentID.length)
-      
-
-   };
-
-});
+    import JSON from '/SampleJSON/everything.json'
+    export default{
+      data(){
+        return {
+          myJSON: json
+        }
+      }
+    }
 </script>
 
 	<title>Applications</title>
@@ -60,9 +55,9 @@
 
 
 
-<!=  onsubmit="chooseForm(); return false;" novalidate="true" "> 
-<!- clicking submit runs the checkForm function ->
-<form id="newForm" action="" method="post" align = "center" onsubmit="validateInput() ; return false;"" > 
+<!--  onsubmit="chooseForm(); return false;" novalidate="true" "--> 
+<!-- clicking submit runs the checkForm function -->
+<form id="newForm" action="" method="post" align = "center" onsubmit="validateInput() ; return false;" > 
   
   <p>
     <label for="name">Name<label>
@@ -289,8 +284,6 @@
 <br>
 
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
@@ -300,12 +293,30 @@
 const app = new Vue({
   el:'#app',
   data:{
+    "applications": [
+        {
+            "app_id": 1,
+            "app_name": "Squatting Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "squatting",
+            "app_term": 20172
+        },
+        {
+            "app_id": 2,
+            "app_name": "Omega Fall 2018",
+            "app_open": "2018-11-26T05:00:00.000Z",
+            "app_close": "2012-11-29T05:00:00.000Z",
+            "app_type": "omega",
+            "app_term": 20172
+        }
+    ],
     errors:[],
     name:null,
     ID: null,
     movie: null,
     Housing: null,
-    seen: true;
+    seen: true
 
   },
   methods:{

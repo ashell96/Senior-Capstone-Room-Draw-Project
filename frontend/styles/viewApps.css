@@ -1,0 +1,21 @@
+h1{
+	font-size: 50px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	font-family: Georgia, Times, serif;
+	color: rgb(126, 177, 183);
+
+}
+
+#omegaB{
+    position: absolute;   
+    top: 70%; 
+}
+
+#NuB{
+    position: absolute;
+    left: 20%;
+    top: 70%;
+  
+    
+}
