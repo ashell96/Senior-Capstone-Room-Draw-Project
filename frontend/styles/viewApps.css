@@ -9,13 +9,44 @@ h1{
 
 #omegaB{
     position: absolute;   
-    top: 70%; 
+    top: 33.7%; 
+    right: 1%;
 }
 
-#NuB{
+#nuB{
     position: absolute;
-    left: 20%;
-    top: 70%;
-  
-    
+    top: 60.5%;
+    right: 1%;
+}
+
+#squattingB{
+    position: absolute;
+    top: 27%;
+    right: 1%;
+}
+
+#offCampusB{
+    position: absolute;
+    top: 54%;
+    right: 1%;
+
+}
+#traditionalB{
+    position: absolute;
+    top: 40.4%;
+    right: 1%;
+}
+
+#themedB{
+    position: absolute;
+    top: 47%;
+    right: 1%;
+}
+
+#houses{
+    background-color:rgb(220, 228, 232);
+}
+
+#close{
+    background-color:rgb(220, 228, 232);
 }
