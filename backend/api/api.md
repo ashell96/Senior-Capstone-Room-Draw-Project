@@ -43,3 +43,6 @@ These will probably not be accessible to user and only happen on server side
 * /applications/:applicationID
 * /students/:email
 * /submissions/:stubmissionID
+
+## POST
+* /

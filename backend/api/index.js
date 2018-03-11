@@ -21,6 +21,14 @@ connection.connect(function (err) {
   
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
 
+// This is needed during testing to allow access when not serving webpages
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+  
 function dbQuery(req,res,sql){
     //res.send(sql);
     //return;
