@@ -1,6 +1,12 @@
 'use strict';
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+
+//Needed to get POST body
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 
 const mysql = require('mysql');
 let connection = mysql.createConnection({
@@ -81,3 +87,13 @@ app.get("/submissions/:submissionID" ,function(req, res){
     const sql = "SELECT * FROM submission WHERE submission_id = " + connection.escape(req.params.submissionID); 
     dbQuery(req,res,sql);
 });
+
+
+app.post("/submission", function(req,res){
+    /*
+    Expects:
+    
+    */
+    res.send(req.body);
+    console.log(req.body);
+})

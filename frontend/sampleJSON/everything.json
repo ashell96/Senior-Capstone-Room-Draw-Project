@@ -11,15 +11,41 @@
     ],
     "students": [
         {
-            "student_id": 1274132,
-            "first_name": "Wilbur",
-            "last_name": "Daniels",
+            "first_name": "Ashley",
+            "last_name": "Ellis",
             "class_standing": 3,
-            "email": "rlbcerger@eckerd.edu",
+            "email": "apellis@eckerd.edu",
             "phone": "1 800 411 PAIN"
         },
         {
-            "student_id": 1274222,
+            "first_name": "Atanas",
+            "last_name": "Sarafov",
+            "class_standing": 3,
+            "email": "apsarafo@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "first_name": "Adrian",
+            "last_name": "Kimbrell",
+            "class_standing": 3,
+            "email": "awkimbre@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "first_name": "Kyle",
+            "last_name": "Glaws",
+            "class_standing": 3,
+            "email": "krglaws@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
+            "first_name": "Matt",
+            "last_name": "Kopeland",
+            "class_standing": 3,
+            "email": "mdkopelm@eckerd.edu",
+            "phone": "1 800 411 PAIN"
+        },
+        {
             "first_name": "Ray",
             "last_name": "Berger",
             "class_standing": 3,
@@ -27,51 +53,10 @@
             "phone": "1 800 411 PAIN"
         },
         {
-            "student_id": 1274357,
-            "first_name": "Joanne",
-            "last_name": "Simon",
+            "first_name": "Sebastian",
+            "last_name": "Battle",
             "class_standing": 3,
-            "email": "rlberager@eckerd.edu",
-            "phone": "1 800 411 PAIN"
-        },
-        {
-            "student_id": 1274456,
-            "first_name": "Woodrow",
-            "last_name": "Armstrong",
-            "class_standing": 3,
-            "email": "rlbearger@eckerd.edu",
-            "phone": "1 800 411 PAIN"
-        },
-        {
-            "student_id": 1274653,
-            "first_name": "Craig",
-            "last_name": "Reynolds",
-            "class_standing": 3,
-            "email": "rlbedrger@eckerd.edu",
-            "phone": "1 800 411 PAIN"
-        },
-        {
-            "student_id": 1274735,
-            "first_name": "Dewey",
-            "last_name": "Holt",
-            "class_standing": 3,
-            "email": "rlbergaer@eckerd.edu",
-            "phone": "1 800 411 PAIN"
-        },
-        {
-            "student_id": 1274765,
-            "first_name": "Wilbert",
-            "last_name": "Mendoza",
-            "class_standing": 3,
-            "email": "rlbeerger@eckerd.edu",
-            "phone": "1 800 411 PAIN"
-        },
-        {
-            "student_id": 1274768,
-            "first_name": "Bethany",
-            "last_name": "Moss",
-            "class_standing": 3,
-            "email": "rlbereger@eckerd.edu",
+            "email": "sabattle@eckerd.edu",
             "phone": "1 800 411 PAIN"
         }
     ],
@@ -118,18 +103,50 @@
     "submissions": [
         {
             "submission_id": 1,
-            "primary_student_id": 1274222,
-            "submission_date": "2018-02-26T01:48:04.000Z",
+            "primary_student_email": "rlberger@eckerd.edu",
+            "submission_date": "2018-03-12T17:06:23.000Z",
             "app_id": 1,
-            "room": "alpha beta 3",
-            "roommate1_email": "myroomie@eckerd.edu",
-            "roommate2_email": null,
-            "roommate3_email": null,
-            "roommate4_email": null,
-            "roommate5_email": null,
-            "roommate6_email": null,
-            "roommate7_email": null,
+            "room": "Alpha Beta 3",
             "sub_status": "pending"
+        },
+        {
+            "submission_id": 2,
+            "primary_student_email": "mdkopelm@eckerd.edu",
+            "submission_date": "2018-03-12T17:06:23.000Z",
+            "app_id": 1,
+            "room": "Omega 300",
+            "sub_status": "pending"
+        },
+        {
+            "submission_id": 3,
+            "primary_student_email": "apsarafo@eckerd.edu",
+            "submission_date": "2018-03-12T17:06:23.000Z",
+            "app_id": 1,
+            "room": "Kappa Morris 1",
+            "sub_status": "pending"
+        }
+    ],
+    "requests": [
+        {
+            "request_id": 1,
+            "requester_email": "rlberger@eckerd.edu",
+            "requestee_email": "krglaws@eckerd.edu",
+            "submission_id": 1,
+            "request_status": "pending"
+        },
+        {
+            "request_id": 2,
+            "requester_email": "mdkopelm@eckerd.edu",
+            "requestee_email": "sabattle@eckerd.edu",
+            "submission_id": 2,
+            "request_status": "pending"
+        },
+        {
+            "request_id": 3,
+            "requester_email": "apsarafo@eckerd.edu",
+            "requestee_email": "awkimbre@eckerd.edu",
+            "submission_id": 3,
+            "request_status": "pending"
         }
     ]
 }

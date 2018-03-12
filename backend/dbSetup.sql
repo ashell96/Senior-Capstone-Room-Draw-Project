@@ -28,34 +28,33 @@ CREATE TABLE application (
 );
 
 CREATE TABLE student (
-  student_id INT NOT NULL PRIMARY KEY,
   first_name VARCHAR(20) NOT NULL,
   last_name VARCHAR(20) NOT NULL,
   class_standing INT NOT NULL, # 0 (freshmen) through 3(senior)
-  email VARCHAR(30) NOT NULL UNIQUE,
-  phone VARCHAR(30) NOT NULL
+  email VARCHAR(30) NOT NULL PRIMARY KEY,
+  phone VARCHAR(30) # Not sure if we really need this
 );
 
 CREATE TABLE submission (
   submission_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  primary_student_id INT NOT NULL,
+  primary_student_email VARCHAR(30) NOT NULL,
   submission_date DATETIME NOT NULL DEFAULT NOW(),
   app_id INT NOT NULL, 
   room VARCHAR(30),
   sub_status VARCHAR(30),
-  FOREIGN KEY (primary_student_id) REFERENCES student(student_id),
+  FOREIGN KEY (primary_student_email) REFERENCES student(email),
   FOREIGN KEY (app_id) REFERENCES application(app_id)
 );
 
 
 CREATE TABLE request (
   request_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  requester_id INT NOT NULL,
-  requestee_id INT NOT NULL,
+  requester_email VARCHAR(30) NOT NULL,
+  requestee_email VARCHAR(30) NOT NULL,
   submission_id  INT NOT NULL,
   request_status VARCHAR(30), # pending, approved, denied
-  FOREIGN KEY (requester_id) REFERENCES student(student_id),
-  FOREIGN KEY (requestee_id) REFERENCES student(student_id),
+  FOREIGN KEY (requester_email) REFERENCES student(email),
+  FOREIGN KEY (requestee_email) REFERENCES student(email),
   FOREIGN KEY (submission_id) REFERENCES submission(submission_id)
 );
 
@@ -81,33 +80,32 @@ INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
 VALUES ('Traditionals 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "traditional",20172);
 
 
-INSERT INTO student VALUES (1274222, "Ray","Berger",3,"rlberger@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274653, "Craig","Reynolds",3,"rlbedrger@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274768, "Bethany","Moss",3,"rlbereger@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274357, "Joanne","Simon",3,"rlberager@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274132, "Wilbur","Daniels",3,"rlbcerger@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274765, "Wilbert","Mendoza",3,"rlbeerger@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274735, "Dewey","Holt",3,"rlbergaer@eckerd.edu","1 800 411 PAIN");
-INSERT INTO student VALUES (1274456, "Woodrow","Armstrong",3,"rlbearger@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Ray","Berger",3,"rlberger@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Matt","Kopeland",3,"mdkopelm@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Atanas","Sarafov",3,"apsarafo@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Adrian","Kimbrell",3,"awkimbre@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Ashley","Ellis",3,"apellis@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Sebastian","Battle",3,"sabattle@eckerd.edu","1 800 411 PAIN");
+INSERT INTO student VALUES ("Kyle","Glaws",3,"krglaws@eckerd.edu","1 800 411 PAIN");
 
 INSERT INTO room VALUES ("Omega","","101");
 INSERT INTO room VALUES ("Omega","","103");
 INSERT INTO room VALUES ("Alpha","Gershwin","22");
 INSERT INTO room VALUES ("Beta","Darwin","11");
 
-INSERT INTO submission (primary_student_id, app_id, room, sub_status)
-VALUES (1274222, 1, "Alpha Beta 3", "pending");
-INSERT INTO submission (primary_student_id, app_id, room, sub_status)
-VALUES (1274768, 1, "Omega 300", "pending");
-INSERT INTO submission (primary_student_id, app_id, room, sub_status)
-VALUES (1274765, 1, "Kappa Morris 1", "pending");
+INSERT INTO submission (primary_student_email, app_id, room, sub_status)
+VALUES ("rlberger@eckerd.edu", 1, "Alpha Beta 3", "pending");
+INSERT INTO submission (primary_student_email, app_id, room, sub_status)
+VALUES ("mdkopelm@eckerd.edu", 1, "Omega 300", "pending");
+INSERT INTO submission (primary_student_email, app_id, room, sub_status)
+VALUES ("apsarafo@eckerd.edu", 1, "Kappa Morris 1", "pending");
 
-INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
-VALUES (1274222, 1274132, 1, "pending");
-INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
-VALUES (1274768, 1274735, 1, "pending");
-INSERT INTO request (requester_id, requestee_id, submission_id, request_status)
-VALUES (1274765, 1274456, 1, "pending");
+INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+VALUES ("rlberger@eckerd.edu", "krglaws@eckerd.edu", 1, "pending");
+INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+VALUES ("mdkopelm@eckerd.edu", "sabattle@eckerd.edu", 2, "pending");
+INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+VALUES ("apsarafo@eckerd.edu", "awkimbre@eckerd.edu", 3, "pending");
 
 INSERT INTO submissions_requests VALUES (1,1);
 INSERT INTO submissions_requests VALUES (2,2);
