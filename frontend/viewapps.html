@@ -1,302 +1,122 @@
+<!DOCTYPE html>
 <html>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-    <title>Room Draw 2018</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="styles/viewApps.css" type="text/css" rel="stylesheet"/>
+    <head>
+        <title>Room Draw 2018</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="styles/viewApps.css" type="text/css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    </head>
 
+    <body>
     <h1 class="display-1">Application Choices</h1>
     <div id="editor">
         <table class="table">
             <thead>
                 <tr>
-                    <th scope ="col">Housing Types:</th>
+                    <th scope="col">Housing Type:</th>
                     <th scope="col">Open Time Period</th>
                     <th scope="col">Close Time Period</th>
                     <th scope="col">Applications/Submissions</th>
-                        </tr>
+                </tr>
             </thead>
             <tbody>
-             <tr v-for="item in applications">
-              <td id="houses">{{item.app_name}}</td>
-              <td id="open"> Open Period: {{item.app_open}}</td>
-              <td id="close"> Close Period: {{item.app_close}}</td>
-             </tr>
-        </tbody>
+                <tr v-for="item in applications">
+                    <td id="houses">{{item.app_type}}</td>
+                    <td id="open">{{new Date(item.app_open).toLocaleString()}}</td>
+                    <td id="close">{{new Date(item.app_close).toLocaleString()}}</td>
+                    <td>
+                        <button v-if="appIsOpen(item)" class="btn btn-info btn-sm" v-on:click="goToApplication">Apply</button>
+                        <button v-else  class="btn btn-info btn-sm">Closed</button>
+                    </td>
+                </tr>
+            </tbody>
         </table>
-      </div>
-
-      <div id="Nu">
-       <button id= "nuB" class="btn btn-info btn-sm" v-on:click="validateTime">Nu Application</button>
-      </div> 
-
-      <div id="Omega">
-            <button id= "omegaB" class="btn btn-info btn-sm" v-on:click="validateTime">Omega Application</button>
-     
-           </div> 
-      <div id="Squatting">
-                <button id= "squattingB" class="btn btn-info btn-sm" v-on:click="validateTime">Squatting Application</button>
-         
-               </div> 
-    
-      <div id="OffCampus">
-                    <button id= "offCampusB" class="btn btn-info btn-sm" v-on:click="validateTime">OffCampus Application</button>
-             
-                   </div> 
-
-      <div id="Traditional">
-                <button id= "traditionalB" class="btn btn-info btn-sm" v-on:click="validateTime">Traditional Application</button>
-         
-               </div> 
-
-            
-      <div id="Themed">
-                    <button id= "themedB" class="btn btn-info btn-sm" v-on:click="validateTime">Themed Application</button>
-             
-                   </div> 
+    </div>
+</body>
 </html>
 
 <script>
-    new Vue({
-  el: '#editor',
-  data: {
-    "applications": [
-        {
-            "app_id": 1,
-            "app_name": "Squatting Fall 2018",
-            "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "squatting",
-            "app_term": 20172
-        },
-        {
-            "app_id": 2,
-            "app_name": "Omega Fall 2018",
-            "app_open": new Date("2018-03-20T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "omega",
-            "app_term": 20172
-        },
+   var myFirstVue = new Vue({
+        el: '#editor',
+        data: {
+            "applications": [
+               /* these aren't needed now since they call from server
+                {
+                    "app_id": 1,
+                    "app_name": "Squatting Fall 2010",
+                    "app_open": new Date("2018-01-26T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "squatting",
+                    "app_term": 20172
+                },
+                {
+                    "app_id": 2,
+                    "app_name": "Omega Fall 2018",
+                    "app_open": new Date("2018-03-20T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "omega",
+                    "app_term": 20172
+                },
 
-        {
-            "app_id": 2,
-            "app_name": "Traditional Fall 2018",
-            "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "traditional",
-            "app_term": 20172
+                {
+                    "app_id": 2,
+                    "app_name": "Traditional Fall 2018",
+                    "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "traditional",
+                    "app_term": 20172
+                },
+                {
+                    "app_id": 2,
+                    "app_name": "Themed Fall 2018",
+                    "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "themed",
+                    "app_term": 20172
+                },
+                {
+                    "app_id": 2,
+                    "app_name": "Off-Campus Fall 2018",
+                    "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "offcampus",
+                    "app_term": 20172
+                },
+                {
+                    "app_id": 2,
+                    "app_name": "Nu Fall 2018",
+                    "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
+                    "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
+                    "app_type": "nu",
+                    "app_term": 20172
+                }*/
+            ]
         },
-        {
-            "app_id": 2,
-            "app_name": "Themed Fall 2018",
-            "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "themed",
-            "app_term": 20172
-        },
-        {
-            "app_id": 2,
-            "app_name": "Off-Campus Fall 2018",
-            "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "offcampus",
-            "app_term": 20172
-        },
-        {
-            "app_id": 2,
-            "app_name": "Nu Fall 2018",
-            "app_open": new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-            "app_close": new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-            "app_type": "nu",
-            "app_term": 20172
-        },
-    ]
-  }
-})
+        methods: {
+            appIsOpen : function(app){
+                let now = new Date();
+                let open_date = new Date(app.app_open);
+                let close_date = new Date(app.app_close);
+                return (now > open_date && now < close_date);
+            },
+            goToApplication: function () {
+                window.location = ("applications.html");
+            }
+        }
+    })
 </script>
 
-
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#Nu",
-       
-        data:{
-            currentMonth: new Date().toDateString(),
-            acceptedMonth:new Date("2018-04-04T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Nu are not being accepted right now.",
-            validMessage:"Now directing you to Nu Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");
-                    
-                    
-                }
-
-            }
-
-        }
-    
-    
-        
-    
-    });
-    </script>
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#Omega",
-       
-        data:{
-            currentMonth:new Date().toDateString(),
-            acceptedMonth:new Date("2018-03-21T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Omega are not being accepted right now.",
-            validMessage:"Now directing you to Omega Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");
-                    
-                    
-                }
-
-            }
-
-        }
-    
-    
-        
-    
-    });
-    </script>
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#Squatting",
-       
-        data:{
-            currentMonth:new Date().toDateString(),
-            acceptedMonth:new Date("2018-03-20T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Squatting are not being accepted right now.",
-            validMessage:"Now directing you to Squatting Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");
-                    
-                    
-                }
-
-            }
-
-        }
-    });
-    </script>
-
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#Traditional",
-       
-        data:{
-            currentMonth: new Date().toDateString(),
-            acceptedMonth: new Date("2018-04-10T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Traditional Housing are not being accepted right now.",
-            validMessage:"Now directing you to Traditional Housing Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");
-                    
-                    
-                }
-
-            }
-
-        }
-    
-    
-        
-    
-    });
-   </script>
-
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#Themed",
-       
-        data:{
-            currentMonth: new Date().toDateString(),
-            acceptedMonth: new Date("2018-04-20T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Themed Housing are not being accepted right now.",
-            validMessage:"Now directing you to Themed Housing Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");
-                    
-                    
-                }
-
-            }
-
-        }
-    });
-    </script>
-
-<script type="text/javascript"> 
-    var app = new Vue({
-        el: "#OffCampus",
-       
-        data:{
-            currentMonth: new Date().toDateString(),
-            acceptedMonth: new Date("2018-05-10T00:00:00.000Z").toDateString(),
-            invalidMessage: "Applications for Off Campus Housing are not being accepted right now.",
-            validMessage:"Now directing you to Off Campus Housing Application page",
-        },
-        methods: {
-            validateTime: function(){
-                if (this.currentMonth != this.acceptMonth){
-                    alert(this.invalidMessage);
-                    
-                }
-                else{
-                    alert(this.validMessage),
-                    window.location.replace("file:///Users/ashleyellis/Documents/gitFolder/Sandpiper/frontend/applications.html");   
-                    
-                }
-
-            }
-
-        }
-    });
-    </script>
+<script>
+    axios.get('http://entropy7.nas.eckerd.edu:3000/applications/')
+        .then(function (response) {
+            Vue.set(myFirstVue, "applications", response.data);
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+</script>
