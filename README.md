@@ -11,4 +11,4 @@ To view it, download the diagram and open it on https://draw.io
 * [Tentative Schedule](/documents/schedule.md)
 * [Design Document](/documents/design.pdf)
 * [Requirements Document](/documents/requirements.pdf)
-* [Database Setup Document](/documents/sql.md)
+* [Database Setup Document](/documents/database.md)
