@@ -89,7 +89,11 @@ app.get("/submissions/:submissionID" ,function(req, res){
 });
 
 
-app.post("/applications", function(req,res){
+app.post("/submission", function(req,res){
+    /*
+    Expects:
+    
+    */
     res.send(req.body);
     console.log(req.body);
 })
