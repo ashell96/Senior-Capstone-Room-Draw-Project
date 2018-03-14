@@ -14,6 +14,9 @@ To view it, download the diagram and open it on https://draw.io
 * [Database Setup Document](/documents/database.md)
 
 ## Setup Frontend
+```
 git clone https://github.com/Eckerd-CS-Capstone/Sandpiper.git
 cd Sandpiper/frontend/housing/
+npm install
 npm run serve
+```
