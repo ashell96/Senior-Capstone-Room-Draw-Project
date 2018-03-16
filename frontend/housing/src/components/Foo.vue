@@ -8,23 +8,40 @@
 <input v-model="email" placeholder="Enter e-mail"> </p>
 
 
-<p>Current Room Assignment for Roommate 1: 
+<p>Current Room Assignment of Roommate 1: 
   <input v-model="roommateAssign1" placeholder="Dorm, House, Rm #"> </p>
 
-<p> Please enter your roommate's e-mail: 
-<input v-model="email2" placeholder="Enter e-mail"> </p>
+
 
 <p>Are you squatting with the your current roommate?
 <input type="checkbox" v-model="checkYes"> Yes
 <input type="checkbox" v-model="checkNo"> No</p>
-<p>Current Room Assignment for Roommate 2: 
+
+<template v-if="checkYes">
+  <template v-if="checkNo">
+    <p> Please check one </p></template>
+    <template v-else>
+       <p> Please enter your current roommate's e-mail: 
+      <input v-model="email2" placeholder="Enter e-mail"> </p>
+      <p>Current room assignment of Roommate 2: 
+    <input v-model="roommateAssign2" placeholder="Dorm, House, Rm #"> </p>
+    </template>
+    </template>
+
+
+<template v-if="checkNo">
+  <template v-if="checkYes">
+    <p>  </p></template>
+    <template v-else> 
+    <p> Please enter your proposed roommate's e-mail: 
+    <input v-model="email2" placeholder="Enter e-mail"> </p>
+    <p>Current room assignment of proposed Roommate 2: 
   <input v-model="roommateAssign2" placeholder="Dorm, House, Rm #"> </p>
-
-  <button class="btn btn-info btn-sm">Submit</button>
-
-<p>{{message}}</p>
+</template>
+</template>
 
 
+<button class="btn btn-info btn-sm">Submit</button>
 
 </span>
 </template>
@@ -33,11 +50,13 @@
 module.exports = {
   data: function() {
     return {
-      message: " ",
+      message: "hi ",
       roommateAssign1: " ",
       roommateAssign2: " ",
       email: "",
-      email2: " "
+      email2: " ",
+      checkYes: null,
+      checkNo: null
     };
   },
 
@@ -47,8 +66,8 @@ module.exports = {
     },
     showAdditional: function() {}
   },
-  show: function(){
+  
+  
 
-  }
 };
 </script>
