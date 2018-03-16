@@ -95,7 +95,7 @@ module.exports = {
       return now > open_date && now < close_date;
     },
     goToApplication: function() {
-      window.location = "applications.html";
+      window.location = '/#/Foo'; //go to Squatting Application
     },
     updateApps: function() {
       let vm = this;
