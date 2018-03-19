@@ -13,7 +13,7 @@
 
 
 
-<p>Are you squatting with the your current roommate?
+<p>Are you squatting with your current roommate?
 <input type="checkbox" v-model="checkYes"> Yes
 <input type="checkbox" v-model="checkNo"> No</p>
 
@@ -22,7 +22,7 @@
     <p> Please check one </p></template>
     <template v-else>
        <p> Please enter your current roommate's e-mail: 
-      <input v-model="email2" placeholder="Enter e-mail"> </p>
+      <input v-model="email" placeholder="Enter e-mail"> </p>
       <p>Current room assignment of Roommate 2: 
     <input v-model="roommateAssign2" placeholder="Dorm, House, Rm #"> </p>
     </template>
@@ -51,10 +51,10 @@ module.exports = {
   data: function() {
     return {
       message: "hi ",
-      roommateAssign1: " ",
-      roommateAssign2: " ",
+      roommateAssign1: "",
+      roommateAssign2: "",
       email: "",
-      email2: " ",
+      email2: "",
       checkYes: null,
       checkNo: null
     };

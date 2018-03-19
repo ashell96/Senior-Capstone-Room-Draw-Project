@@ -9,11 +9,12 @@
         <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+        <router-link class="py-2 d-none d-md-inline-block" to="/HousingRules">Housing Rules</router-link>
+        <router-link class="py-2 d-none d-md-inline-block" to="/Traditional">Go to Traditional</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/">Go to Hello</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="Foo">Go to Foo</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/viewApps">Go to Apps</router-link>
+        
       
       </div>
     </nav>
