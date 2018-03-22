@@ -5,6 +5,7 @@ import Foo from '@/components/Foo'
 import Traditional from '@/components/Traditional'
 import ViewApplications from '@/components/ViewApplications'
 import HousingRules from '@/components/HousingRules'
+import Omega from '@/components/Omega'
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -33,6 +34,11 @@ export default new Router({
         path: '/housingRules',
         name: 'HousingRules',
         component: HousingRules
+        },
+        {
+        path: "/omega",
+        name: 'Omega',
+        component: Omega
         }
     ]
 })
