@@ -7,6 +7,7 @@ import HousingRules from '@/components/HousingRules'
 import Home from '@/components/Home'
 import Register from '@/components/Register'
 import RoomSelector from '@/components/RoomSelector'
+import Omega from '@/components/Omega'
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -47,5 +48,10 @@ export default new Router({
             name: 'RoomSelector',
             component: RoomSelector
         },
+        {
+        path: "/omega",
+        name: 'Omega',
+        component: Omega
+        }
     ]
 })
