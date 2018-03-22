@@ -1,17 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/HelloWorld'
 import Foo from '@/components/Foo'
 import Traditional from '@/components/Traditional'
 import ViewApplications from '@/components/ViewApplications'
 import HousingRules from '@/components/HousingRules'
+import Home from '@/components/Home'
+import Register from '@/components/Register'
 Vue.use(Router)
 export default new Router({
     routes: [
         {
             path: '/',
-            name: 'Hello',
-            component: Hello
+            name: 'Home',
+            component: Home
         },
         {
             path: '/foo',
@@ -25,14 +26,20 @@ export default new Router({
         },
         {
 
-        path: '/traditional',
-        name: 'Traditional',
-        component: Traditional
+            path: '/traditional',
+            name: 'Traditional',
+            component: Traditional
         },
         {
-        path: '/housingRules',
-        name: 'HousingRules',
-        component: HousingRules
+            path: '/housingRules',
+            name: 'HousingRules',
+            component: HousingRules
+        },
+        {
+            path: '/register',
+            name: 'Register',
+            component: Register,
+            props : true
         }
     ]
 })
