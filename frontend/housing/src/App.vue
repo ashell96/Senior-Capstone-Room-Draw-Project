@@ -18,47 +18,44 @@
         <router-link class="py-2 d-none d-md-inline-block" to="/viewApps">Go to Apps</router-link>
         <span>
           <img v-if="loggedIn" :src="profilePic" class="img-circle img-responsive" v-on:click="signOut" height=40>
-          
-        <router-link v-else class="py-2 d-none d-md-inline-block" to="Register">Sign In</router-link>
-        
+          <router-link v-else class="py-2 d-none d-md-inline-block" to="Register">Sign In</router-link>
         </span>
       </div>
     </nav>
-    <router-view :vuer="fbb" :fbui="firebaseui"></router-view>
+    <router-view :firebase="topFirebase"></router-view>
     </div>
 </template>
  
 <script>
-import firebase from 'firebase'
+import firebase from "firebase";
 
 export default {
   data: function() {
     return {
       loggedIn: false,
       profilePic: "https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png",
-      fbb : firebase,
+      topFirebase: firebase
     };
   },
   methods: {
     signIn: function() {
       console.log("created");
-      let vm = this;
+      let vueObj = this;
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
-          vm.profilePic = firebase.auth().currentUser.photoURL;
-          vm.loggedIn = true;
-          console.log("login worked");
+          vueObj.profilePic = firebase.auth().currentUser.photoURL;
+          vueObj.loggedIn = true;
+          console.log("login success");
         } else {
           // No user is signed in.
+          this.loggedIn = false;
           console.log("login failed");
-          //vm.img = "a";
         }
       });
     },
     signOut: function() {
       firebase.auth().signOut();
-      this.loggedIn = false;
     },
     signInButton: function() {
       window.location.href = "/register.html";
