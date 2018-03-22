@@ -14,14 +14,14 @@ export default {
       message: "Application"
     };
   },
-  props: ["vuer", "fbui"],
+  props: ["firebase"],
   methods: {
     testMethod: function() {
       console.log("test method running");
     }
   },
   created: function() {
-    let firebase = this.$props.vuer;
+    let firebase = this.$props.firebase;
     let firebaseui = require("firebaseui");
 
     var uiConfig = {
