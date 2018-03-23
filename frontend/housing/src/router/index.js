@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/HelloWorld'
-import Foo from '@/components/Foo'
+import Squatting from '@/components/Squatting'
 import Traditional from '@/components/Traditional'
 import ViewApplications from '@/components/ViewApplications'
 import HousingRules from '@/components/HousingRules'
 import Omega from '@/components/Omega'
+import Themed from '@/components/Themed'
+import OffCampus from '@/components/OffCampus'
+import Nu from '@/components/Nu'
+
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -15,9 +19,9 @@ export default new Router({
             component: Hello
         },
         {
-            path: '/foo',
-            name: 'Foo',
-            component: Foo
+            path: '/squatting',
+            name: 'Squatting',
+            component: Squatting
         },
         {
             path: '/viewApps',
@@ -26,19 +30,35 @@ export default new Router({
         },
         {
 
-        path: '/traditional',
-        name: 'Traditional',
-        component: Traditional
+            path: '/traditional',
+            name: 'Traditional',
+            component: Traditional
         },
         {
-        path: '/housingRules',
-        name: 'HousingRules',
-        component: HousingRules
+            path: '/housingRules',
+            name: 'HousingRules',
+            component: HousingRules
         },
         {
-        path: "/omega",
-        name: 'Omega',
-        component: Omega
+            path: '/omega',
+            name: 'Omega',
+            component: Omega
+        },
+        {
+            path: '/themed',
+            name: 'Themed',
+            component: Themed
+        },
+        {
+            path: '/offcampus',
+            name: 'OffCampus',
+            component: OffCampus
+        },
+        {
+            path: '/nu',
+            name: 'Nu',
+            component: Nu
         }
+
     ]
 })
