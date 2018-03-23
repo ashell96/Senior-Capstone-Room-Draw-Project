@@ -14,7 +14,7 @@
             <tbody>
                 
                 <tr v-for="item in applications" :key="item.app_id">
-                    <td id="houses">{{item.app_name}}</td>
+                    <td id="houses">{{item.app_name}} </td>
                     <td id="open">{{new Date(item.app_open).toLocaleString()}}</td>
                     <td id="close">{{new Date(item.app_close).toLocaleString()}}</td>
                     <td>
@@ -95,7 +95,9 @@ module.exports = {
       return now > open_date && now < close_date;
     },
     goToApplication: function() {
+      
       window.location = '/#/Foo'; //go to Squatting Application
+      
     },
     updateApps: function() {
       let vm = this;

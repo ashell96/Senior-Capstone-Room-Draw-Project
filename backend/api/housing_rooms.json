@@ -1,0 +1,4979 @@
+{
+    "iota": [
+        {
+            "Byers": [
+                {
+                    "room_number": "101",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "102",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "103",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "104",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "105",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "106",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "107",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "108",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "109",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "111",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "112",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "113",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "201",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "202",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "203",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "204",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "205",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "206",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "208",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "209",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "211",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "212",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "213",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Lukens": [
+                {
+                    "room_number": "101",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "102",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "103",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "104",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "105",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "106",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "107",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "108",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "109",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "111",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "112",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "113",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "201",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "202",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "203",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "204",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "205",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "206",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "208",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "209",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "211",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "212",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "213",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Wittner": [
+                {
+                    "room_number": "101",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "102",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "103",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "104",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "105",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "106",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "113",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "114",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "115",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "116",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "117",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "119",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "201",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "202",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "203",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "204",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "205",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "206",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "213",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "214",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "215",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "216",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "217",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "219",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Wrenn": [
+                {
+                    "room_number": "101",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "102",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "103",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "104",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "105",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "106",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "107",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "108",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "109",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "111",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "112",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "113",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "201",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "202",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "203",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "204",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "205",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "206",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "207",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "208",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "209",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "211",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "212",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "213",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Nu": [
+        {
+            "Suite1": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite2": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite3": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite4": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite5": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite6": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite7": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite8": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite9": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite10": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite11": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite12": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite13": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite14": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite15": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite16": [
+                {
+                    "room_number": "1",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "2",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "3",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "4",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Omega": [
+        {
+            "Suite101": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite102": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite103": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite104": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite105": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite106": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite107": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite108": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite109": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite110": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite111": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite201": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite202": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite203": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite204": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite205": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite206": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite207": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite208": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite209": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite210": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite211": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite301": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite302": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite303": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite304": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite305": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite306": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite307": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite308": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_letter": "D",
+                    "status": "available",
+                    "type": "single"
+                }
+            ],
+            "Suite309": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite310": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Suite311": [
+                {
+                    "room_letter": "A",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "B",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_letter": "C",
+                    "status": "available",
+                    "type": "single"
+                }
+            ]
+        }
+    ],
+    "Alpha": [
+        {
+            "Ghandi": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Prasch": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Mill": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Gershwin": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Beta": [
+        {
+            "Benedict": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Dante": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Darwin": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Kennedy": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Delta": [
+        {
+            "Berkeley": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Copley": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Ibsen": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "James": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Epsilon": [
+        {
+            "Douglas": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Dalton": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Blakely": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Beecher": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Gamma": [
+        {
+            "Wilson": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Freeman": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Knox": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Newton": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Kappa": [
+        {
+            "Oberg": [
+                {
+                    "room_number": "10",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "suite21": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "double"
+                        },
+                        {
+                            "room_letter": "B",
+                            "status": "available",
+                            "type": "double" 
+                        }
+                    ]
+                },
+                {
+                    "suite22": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "double"
+                        }   
+                    ]
+                },
+                {
+                    "suite23": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "double"
+                        }   
+                    ]
+                },
+                {
+                    "suite24": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "double"
+                        },
+                        {
+                            "room_letter": "B",
+                            "status": "available",
+                            "type": "double" 
+                        }
+                    ]
+                },
+                {
+                    "suite25": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "single"
+                        }   
+                    ]
+                },
+                {
+                    "suite26": [
+                        {
+                            "room_letter": "A",
+                            "status": "available",
+                            "type": "single"
+                        }   
+                    ]
+                }
+            ],
+            "Morris": [
+                {
+                    "room_number": "10",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "20",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "25",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Leighton": [
+                {
+                    "room_number": "10",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "20",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "25",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Scott": [
+                {
+                    "room_number": "10",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "20",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "25",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ]
+        }
+    ],
+    "Zeta": [
+        {
+            "Henderson": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Hiaasen": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Hubbard": [
+                {
+                    "room_number": "11",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "12",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "13",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "14",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "15",
+                    "status": "available",
+                    "type": "single"
+                },
+                {
+                    "room_number": "16",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "17",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "18",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "19",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "21",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "22",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "23",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "24",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "25",
+                    "status": "unavailable",
+                    "type": "single"
+                },
+                {
+                    "room_number": "26",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "27",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "28",
+                    "status": "available",
+                    "type": "double"
+                },
+                {
+                    "room_number": "29",
+                    "status": "available",
+                    "type": "double"
+                }
+            ],
+            "Kirby": [
+                
+            ]
+        }
+    ]
+}
