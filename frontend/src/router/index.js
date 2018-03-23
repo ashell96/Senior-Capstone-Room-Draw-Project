@@ -8,6 +8,9 @@ import Home from '@/components/Home'
 import Register from '@/components/Register'
 import RoomSelector from '@/components/RoomSelector'
 import Omega from '@/components/Omega'
+import OffCampus from '@/components/OffCampus'
+import Nu from '@/components/Nu'
+import Themed from '@/components/Themed'
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -52,6 +55,21 @@ export default new Router({
         path: "/omega",
         name: 'Omega',
         component: Omega
+        },
+        {
+            path: "/offcampus",
+            name: 'OffCampus',
+            component: OffCampus
+        },
+        {
+        path: "/nu",
+        name: 'Nu',
+        component: Nu
+        },
+        {
+            path: "/themed",
+            name: 'Themed',
+            component: Themed
         }
     ]
 })

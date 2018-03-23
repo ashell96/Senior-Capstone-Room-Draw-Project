@@ -11,6 +11,9 @@
         <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
         -->
+        <router-link class="py-2 d-none d-md-inline-block" to="/Themed"> Themed</router-link>
+        <router-link class="py-2 d-none d-md-inline-block" to="/Nu"> Nu</router-link>
+        <router-link class="py-2 d-none d-md-inline-block" to="/OffCampus"> Off-Campus</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/">Home</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/Omega">Go to Omega</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/HousingRules">Housing Rules</router-link>
