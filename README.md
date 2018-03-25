@@ -16,7 +16,7 @@ To view it, download the diagram and open it on https://draw.io
 ## Setup Frontend
 ```
 git clone https://github.com/Eckerd-CS-Capstone/Sandpiper.git
-cd Sandpiper/frontend/housing/
+cd Sandpiper/frontend/
 npm install
 npm run serve
 ```
