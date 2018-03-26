@@ -142,8 +142,9 @@ function determineAppType(app_id, callback){
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;
         console.log('The application is: ', JSON.stringify(results));
-        console.log(results.app_type)
-        callback(results.app_type);
+        let result = results[0];
+        console.log(result.app_type)
+        callback(result.app_type);
     });
 
 }
@@ -187,7 +188,10 @@ app.post("/submission2", function(req,res){
         if (app_type == 'omega') console.log("Do omega");
         if (app_type == 'nu') console.log("Do nu");
         if (app_type == 'themed') console.log("Do theme");
-        if (app_type == 'traditional') console.log("Do tradition");
+        if (app_type == 'traditional') {
+            console.log("Do tradition");
+            traditionalSubmission(requester, requestee, app_id, res);
+        }
         if (app_type == 'off-campus') console.log("Do off-campus");
     });
 });
