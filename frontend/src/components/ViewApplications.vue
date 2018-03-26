@@ -96,7 +96,7 @@ module.exports = {
     },
     goToApplication: function(app) {
       if (app.app_type=='squatting'){
-        window.location = '/#/Foo'; //go to Squatting Application
+        window.location = '/#/Squatting'; //go to Squatting Application
         }
       else if (app.app_type=='omega'){
         window.location = '/#/Omega'
