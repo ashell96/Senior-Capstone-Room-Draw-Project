@@ -90,15 +90,30 @@ app.post("/submission", function(req,res){
     // Assuming traditional
     let requester = req.body.requester;
     let requestee = req.body.requestee;
-    let room = req.body.room;
+    let app_id = req.body.app_id;
+    let room = req.body.room; // Alpha Beta 21
     let status = "pending";
 
+    //if (requester == null || requestee == null || app_id == null || room == null)
+    console.log("Requester " + requester);
+    console.log("requestee " + requestee);
+    console.log("app_id " + app_id);
+    console.log("room " + room);
+    console.log("status " + status);
     // Create a new submission
+    let sql = `INSERT INTO submission (primary_student_email, app_id, room, sub_status)
+    VALUES ("${requester}", "${app_id}", "${room}", "${status}")`;
+    connection.query(sql, function (error, results, fields) {
+        if (error) throw error;
+        console.log('The solution is: ', JSON.stringify(results) );
+        res.send(results);
+      });
+
 
     // Create a new request
 
     // Create a new submision/requests
 
-    res.send(req.body);
-    console.log(req.body);
+    //res.send(req.body);
+    //console.log(req.body);
 })
