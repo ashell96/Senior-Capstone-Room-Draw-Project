@@ -11,7 +11,6 @@
 
 <p>Please enter your e-mail: 
 <input v-model="email" placeholder="Enter e-mail"> </p>
-<br>
 
 <p>Please enter the e-mails of your other roommates</p>
 <p>Roommate #2 <input v-model="email2" placeholder="Enter e-mail"> </p>
@@ -55,7 +54,7 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application", email:"", email2:"", email3:"", email4:"", email5:"", email6:"", email7
+    return { message: "Application", email:"", email2:"", email3:"", email4:"", email5:"", email6:"", email7:""
     };
   },
   methods: {
