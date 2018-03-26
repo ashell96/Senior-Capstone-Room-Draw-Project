@@ -18,7 +18,7 @@
                     <td id="open">{{new Date(item.app_open).toLocaleString()}}</td>
                     <td id="close">{{new Date(item.app_close).toLocaleString()}}</td>
                     <td>
-                        <button v-if="appIsOpen(item)" class="btn btn-info btn-sm" v-on:click="goToApplication">Apply</button>
+                        <button v-if="appIsOpen(item)" class="btn btn-info btn-sm" v-on:click="goToApplication(item)">Apply</button>
                         <button v-else  class="btn btn-info btn-sm">Closed</button>
                     </td>
                 </tr>
@@ -94,8 +94,26 @@ module.exports = {
       let close_date = new Date(app.app_close);
       return now > open_date && now < close_date;
     },
-    goToApplication: function() {
-      window.location = '/#/Foo'; //go to Squatting Application
+    goToApplication: function(app) {
+      if (app.app_type=='squatting'){
+        window.location = '/#/Foo'; //go to Squatting Application
+        }
+      else if (app.app_type=='omega'){
+        window.location = '/#/Omega'
+      }
+      else if (app.app_type=='traditional'){
+        window.location = '/#/Traditional'
+      }
+      else if (app.app_type=='themed'){
+        window.location = '/#/Themed'
+      }
+      else if (app.app_type=='offcampus'){
+        window.location = '/#/OffCampus'
+      }
+      else if (app.app_type=='nu'){
+        window.location = '/#/Nu'
+      }
+
     },
     updateApps: function() {
       let vm = this;
