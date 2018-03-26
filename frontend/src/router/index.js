@@ -12,6 +12,8 @@ import OffCampus from '@/components/OffCampus'
 import Nu from '@/components/Nu'
 import Themed from '@/components/Themed'
 import ViewSubmissions from '@/components/ViewSubmissions'
+import RoommateRequests from '@/components/RoommateRequests'
+
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -77,6 +79,12 @@ export default new Router({
             name: 'ViewSubmissions',
             component: ViewSubmissions
 
+        },
+        {
+            path: '/RoommateRequests',
+            name: 'RoommateRequests',
+            component: RoommateRequests
         }
+
     ]
 })
