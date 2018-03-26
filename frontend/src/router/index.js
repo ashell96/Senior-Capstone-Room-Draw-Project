@@ -1,18 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Squatting from '@/components/Squatting'
-import Traditional from '@/components/Traditional'
+
+// Components
 import ViewApplications from '@/components/ViewApplications'
 import HousingRules from '@/components/HousingRules'
 import Home from '@/components/Home'
 import Register from '@/components/Register'
 import RoomSelector from '@/components/RoomSelector'
-import Omega from '@/components/Omega'
-import OffCampus from '@/components/OffCampus'
-import Nu from '@/components/Nu'
-import Themed from '@/components/Themed'
 import ViewSubmissions from '@/components/ViewSubmissions'
 import RoommateRequests from '@/components/RoommateRequests'
+
+// App types
+import Omega from '@/components/appType/Omega'
+import OffCampus from '@/components/appType/OffCampus'
+import Nu from '@/components/appType/Nu'
+import Themed from '@/components/appType/Themed'
+import Squatting from '@/components/appType/Squatting'
+import Traditional from '@/components/appType/Traditional'
+
 
 Vue.use(Router)
 export default new Router({
