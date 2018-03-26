@@ -90,29 +90,49 @@ app.post("/submission", function(req,res){
     // Assuming traditional
     let requester = req.body.requester;
     let requestee = req.body.requestee;
-    let app_id = req.body.app_id;
+    let app_id = req.body.app_id; // we can eventually check submission type by app ID.
     let room = req.body.room; // Alpha Beta 21
     let status = "pending";
 
     //if (requester == null || requestee == null || app_id == null || room == null)
-    console.log("Requester " + requester);
+    /*console.log("Requester " + requester);
     console.log("requestee " + requestee);
     console.log("app_id " + app_id);
     console.log("room " + room);
-    console.log("status " + status);
+    console.log("status " + status);*/
+
     // Create a new submission
     let sql = `INSERT INTO submission (primary_student_email, app_id, room, sub_status)
     VALUES ("${requester}", "${app_id}", "${room}", "${status}")`;
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;
-        console.log('The solution is: ', JSON.stringify(results) );
-        res.send(results);
-      });
+        let newSubID = results.insertId;
+        //console.log('The results is: ', JSON.stringify(results) );
+        //res.send(results);
 
 
-    // Create a new request
+        // Create a new request
+        let sql2 = ```INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+        VALUES ("${requester}", "${requestee}", ${newSubID}, "pending");```
 
-    // Create a new submision/requests
+        connection.query(sql2, function (error, results, fields) {
+            let newReqID = results.insertId;
+            console.log("new request " + JSON.stringify(results));
+
+            let sql3 = ```INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});```
+            // Create a new submision/requests
+            connection.query(sql3, function (error, results, fields) {
+                console.log("new sub_request " + JSON.stringify(results));
+                res.send("Success...?");
+            });
+        });
+    
+    
+    
+    });
+
+
+
 
     //res.send(req.body);
     //console.log(req.body);
