@@ -9,12 +9,8 @@ app.use(bodyParser.json());
 
 
 const mysql = require('mysql');
-let connection = mysql.createConnection({
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : 'root',
-  database : 'housing'
-});
+let configInfo = require("./config.json");
+let connection = mysql.createConnection(configInfo.database);
 
 
 connection.connect(function (err) {
@@ -90,10 +86,19 @@ app.get("/submissions/:submissionID" ,function(req, res){
 
 
 app.post("/submission", function(req,res){
-    /*
-    Expects:
     
-    */
+    // Assuming traditional
+    let requester = req.body.requester;
+    let requestee = req.body.requestee;
+    let room = req.body.room;
+    let status = "pending";
+
+    // Create a new submission
+
+    // Create a new request
+
+    // Create a new submision/requests
+
     res.send(req.body);
     console.log(req.body);
 })
