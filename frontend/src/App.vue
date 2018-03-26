@@ -6,6 +6,8 @@
         <router-link class="py-2 d-none d-md-inline-block" to="/HousingRules">Housing Rules</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/viewApps">Go to Applications</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/ViewSubmissions">View Submissions</router-link>
+        <router-link class="py-2 d-none d-md-inline-block" to="/RoommateRequests">Roommate Requests</router-link>
+
         <span>
           <img v-if="loggedIn" :src="profilePic" class="img-circle img-responsive" v-on:click="signOut" height=40>
           <router-link v-else class="py-2 d-none d-md-inline-block" to="Register">Sign In</router-link>
