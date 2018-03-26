@@ -85,10 +85,10 @@ app.get("/submissions/:submissionID" ,function(req, res){
 app.post("/submission", function(req,res){
     
     // Assuming traditional
-    let requester = connection.escape(req.body.requester);
-    let requestee = connection.escape(req.body.requestee);
-    let app_id = connection.escape(req.body.app_id); // we can eventually check submission type by app ID.
-    let room = connection.escape(req.body.room); // Alpha Beta 21
+    let requester = req.body.requester;
+    let requestee = req.body.requestee;
+    let app_id = req.body.app_id; // we can eventually check submission type by app ID.
+    let room = req.body.room; // Alpha Beta 21
     let status = "pending";
     
     // Validate components
@@ -184,9 +184,9 @@ function traditionalSubmission(requester, requestee, app_id, res) {
 
 
 app.post("/submission2", function(req,res){
-    let requester = connection.escape(req.body.requester);
-    let requestee = connection.escape(req.body.requestee);
-    let app_id = connection.escape(req.body.app_id);
+    let requester = req.body.requester;
+    let requestee = req.body.requestee;
+    let app_id = req.body.app_id;
     determineAppType(app_id, function(app_type){
         if (app_type == 'squatting') console.log("Do squat");
         if (app_type == 'omega') console.log("Do omega");
