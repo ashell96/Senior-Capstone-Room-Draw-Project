@@ -46,6 +46,7 @@ export default {
     },
     signOut: function() {
       firebase.auth().signOut();
+      window.location.href = ""
     },
     signInButton: function() {
       window.location.href = "/register.html";
