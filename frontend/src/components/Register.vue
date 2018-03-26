@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>Register</h1>
-    <div id="firebaseui-auth-container">{{message}}</div>
+    <div id="firebaseui-auth-container"></div>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css" />
 </div>
 </template>
@@ -11,7 +11,6 @@
 export default {
   data: function() {
     return {
-      message: "Application"
     };
   },
   props: ["firebase"],
