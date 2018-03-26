@@ -19,5 +19,18 @@
           * Aprove/deny applications
         
       </p>
+      <Register v-if="this.$props.firebase != null" :firebase="this.$props.firebase"></Register>
       </div>
 </template>
+
+<script>
+import Register from '@/components/Register';
+
+export default {
+    props: ['firebase'],
+    components: {
+        Register
+        }
+    }
+
+</script>
