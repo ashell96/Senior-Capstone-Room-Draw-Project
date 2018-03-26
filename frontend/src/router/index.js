@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Foo from '@/components/Foo'
+import Squatting from '@/components/Squatting'
 import Traditional from '@/components/Traditional'
 import ViewApplications from '@/components/ViewApplications'
 import HousingRules from '@/components/HousingRules'
@@ -11,6 +11,7 @@ import Omega from '@/components/Omega'
 import OffCampus from '@/components/OffCampus'
 import Nu from '@/components/Nu'
 import Themed from '@/components/Themed'
+import ViewSubmissions from '@/components/ViewSubmissions'
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -20,9 +21,9 @@ export default new Router({
             component: Home
         },
         {
-            path: '/foo',
-            name: 'Foo',
-            component: Foo
+            path: '/Squatting',
+            name: 'Squatting',
+            component: Squatting
         },
         {
             path: '/viewApps',
@@ -70,6 +71,12 @@ export default new Router({
             path: "/themed",
             name: 'Themed',
             component: Themed
+        },
+        {
+            path: "/ViewSubmissions",
+            name: 'ViewSubmissions',
+            component: ViewSubmissions
+
         }
     ]
 })
