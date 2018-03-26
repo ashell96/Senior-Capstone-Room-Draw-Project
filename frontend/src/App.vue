@@ -14,7 +14,9 @@
         </span>
       </div>
     </nav>
-    <router-view :firebase="topFirebase"></router-view>
+    <div class="mx-auto col-md-7">
+      <router-view :curUserEmail="tempEmail" :firebase="topFirebase"></router-view>
+    </div>
     </div>
 </template>
  
@@ -26,7 +28,8 @@ export default {
     return {
       loggedIn: false,
       profilePic: "https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png",
-      topFirebase: firebase
+      topFirebase: firebase,
+      tempEmail : ""//firebase.auth().currentUser.email
     };
   },
   methods: {
@@ -37,6 +40,7 @@ export default {
         if (user) {
           // User is signed in.
           vueObj.profilePic = firebase.auth().currentUser.photoURL;
+          vueObj.tempEmail = "heyyy";
           vueObj.loggedIn = true;
           console.log("login success");
         } else {
