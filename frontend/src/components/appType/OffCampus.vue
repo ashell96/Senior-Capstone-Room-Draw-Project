@@ -51,9 +51,11 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application", email:"", email2:"", email3:"", email4:"", renovated:"", standard:""
+    return { message: "Application", email:this.$props.curUserEmail, email2:"", email3:"", 
+    email4:"", renovated:"", standard:""
     };
   },
+  props : ["curUserEmail"],
   methods: {
     fun: function() {
       console.log("fun");
