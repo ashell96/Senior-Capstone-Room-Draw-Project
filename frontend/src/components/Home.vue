@@ -19,18 +19,19 @@
           * Aprove/deny applications
         
       </p>
-      <Register v-if="this.$props.firebase != null" :firebase="this.$props.firebase"></Register>
+      <Register v-if="this.$props.curUserEmail.length == 0" :firebase="this.$props.firebase"></Register>
       </div>
 </template>
 
 <script>
 import Register from '@/components/Register';
-
 export default {
-    props: ['firebase'],
-    components: {
-        Register
-        }
-    }
-
+	props: ['firebase', "curUserEmail"],
+	components: {
+		Register
+	},
+	mounted: function() {
+		console.log("cur ", this.$props.curUserEmail.length);
+	}
+}
 </script>
