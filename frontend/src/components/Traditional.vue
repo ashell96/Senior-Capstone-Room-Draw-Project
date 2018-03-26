@@ -9,7 +9,7 @@
 </h5>
 
 <p>Please enter your e-mail: 
-<input disabled v-model="email1" placeholder="Enter e-mail"> </p>
+<input v-model="email1" placeholder="Enter e-mail"> </p>
 
 <p>Please enter your roommate's e-mail: 
 <input v-model="email2" placeholder="Enter e-mail"> </p>
