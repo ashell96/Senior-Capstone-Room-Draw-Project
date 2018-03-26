@@ -24,18 +24,26 @@
 export default {
   data: function() {
     return { message: "Application",
-    email1: "rlberger@eckerd.edu",
+    email1: "",
     email2: ""   
     };
   },
   props : ["firebase"],
   created : function () {
-    //this.email1 = this.$props.firebase.auth().currentUser.email;
+
+    // keeps checkign for firebase
+    let vm = this;
+    function checkFirebase(){
+      if (vm.$props.firebase.auth().currentUser == null){
+        console.log("firebase not found");
+        setTimeout(checkFirebase,1000);
+      } else {
+       vm.email1 = vm.$props.firebase.auth().currentUser.email;
+     }
+    }
+    checkFirebase();
   },
   methods: {
-    fun: function() {
-      console.log("fun");
-    },
     sendTraditional : function() {
       let axios = require("axios");
       
@@ -45,11 +53,12 @@ export default {
           "requester" : vm.email1,
           "requestee" : vm.email2,
           "app_id" : 1,
-          "room" : "Apha Beta 21"
+          "room" : ""
         })
         .then(function(response) {
           console.log(response);
           //vm.$set(vm, "applications", response.data);
+          // Do something on success
         })
         .catch(function(error) {
           console.log(error);
