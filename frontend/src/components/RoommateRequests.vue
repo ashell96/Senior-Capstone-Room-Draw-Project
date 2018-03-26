@@ -5,7 +5,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Submission Id:</th>
+                    <th scope="col">Request Id:</th>
                     <th scope="col">Requester E-mail:</th>
                     <th scope="col">Requestee E-mail:</th>
                     <th scope="col">Submission Id:</th>
