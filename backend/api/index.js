@@ -152,6 +152,7 @@ function determineAppType(app_id, callback){
 
 
 function traditionalSubmission(requester, requestee, app_id, res) {
+    let status = "pending";
     // Create a new submission
     let sql = `INSERT INTO submission (primary_student_email, app_id, sub_status)
         VALUES ("${requester}", "${app_id}", "${status}")`;
