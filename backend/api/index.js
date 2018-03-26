@@ -112,14 +112,14 @@ app.post("/submission", function(req,res){
 
 
         // Create a new request
-        let sql2 = ```INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
-        VALUES ("${requester}", "${requestee}", ${newSubID}, "pending");```
+        let sql2 = `INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+        VALUES ("${requester}", "${requestee}", ${newSubID}, "pending");`;
 
         connection.query(sql2, function (error, results, fields) {
             let newReqID = results.insertId;
             console.log("new request " + JSON.stringify(results));
 
-            let sql3 = ```INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});```
+            let sql3 = `INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});`;
             // Create a new submision/requests
             connection.query(sql3, function (error, results, fields) {
                 console.log("new sub_request " + JSON.stringify(results));
