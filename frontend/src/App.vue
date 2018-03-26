@@ -15,7 +15,7 @@
         <router-link class="py-2 d-none d-md-inline-block" to="/Nu"> Nu</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/OffCampus"> Off-Campus</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/">Home</router-link>
-        <router-link class="py-2 d-none d-md-inline-block" to="/Omega">Go to Omega</router-link>
+        <router-link class="py-2 d-none d-md-inline-block" to="/Omega">Omega</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/HousingRules">Housing Rules</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="/Traditional">Go to Traditional</router-link>
         <router-link class="py-2 d-none d-md-inline-block" to="Foo">Go to Foo</router-link>
