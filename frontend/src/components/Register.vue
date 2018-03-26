@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Register</h1>
+    <h1>Sign In</h1>
     <div id="firebaseui-auth-container"></div>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css" />
 </div>
@@ -14,12 +14,7 @@ export default {
     };
   },
   props: ["firebase"],
-  methods: {
-    testMethod: function() {
-      console.log("test method running");
-    }
-  },
-  created: function() {
+  mounted: function() {
     let firebase = this.$props.firebase;
     let firebaseui = require("firebaseui");
 
@@ -30,14 +25,12 @@ export default {
       signInFlow: "popup"
     };
 
-    let ui;
-    if (firebaseui.auth.AuthUI.getInstance() == null) {
-      ui = new firebaseui.auth.AuthUI(firebase.auth());
-    } else {
-      ui = firebaseui.auth.AuthUI.getInstance();
-    }
+    let ui = firebaseui.auth.AuthUI.getInstance();
+     if (ui == null) {
+    ui = new firebaseui.auth.AuthUI(firebase.auth());
+     }
+        
     ui.start("#firebaseui-auth-container", uiConfig);
-    //TODO: Check if there's an alternative to ui.start
     
   }
 };
