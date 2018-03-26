@@ -152,12 +152,14 @@ function determineAppType(app_id, callback){
 
 
 function traditionalSubmission(requester, requestee, app_id, res) {
+    console.log("starting traditonal sub");
     let status = "pending";
     // Create a new submission
     let sql = `INSERT INTO submission (primary_student_email, app_id, sub_status)
         VALUES ("${requester}", "${app_id}", "${status}")`;
 
     connection.query(sql, function (error, results, fields) {
+        console.log("creating submission");
         if (error) throw error;
         let newSubID = results.insertId;
 
@@ -166,6 +168,7 @@ function traditionalSubmission(requester, requestee, app_id, res) {
             VALUES ("${requester}", "${requestee}", ${newSubID}, "pending");`;
 
         connection.query(sql2, function (error, results, fields) {
+            console.log("creating req");
             if (error) throw error;
             let newReqID = results.insertId;
             let sql3 = `INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});`;
