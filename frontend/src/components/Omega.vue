@@ -63,7 +63,7 @@
 </template>
 </template>
 
-<button class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendToServer()" class="btn btn-info btn-sm">Submit</button>
 
 </span>
 </template>
@@ -72,14 +72,14 @@
 module.exports = {
   data: function() {
     return { message: "Application", Double: "", FourSingle:"", FivePerson:"", email:"", email2:"", email3:"", 
-    email4:"", email5:"" 
+    email4:"", email5:"", one:""
 
       
     
     };
   },
   methods: {
-    fun: function() {
+    sendToServer: function() {
       console.log("fun");
     }
   }
