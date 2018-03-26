@@ -41,7 +41,8 @@ export default new Router({
 
             path: '/traditional',
             name: 'Traditional',
-            component: Traditional
+            component: Traditional,
+            props: true
         },
         {
             path: '/housingRules',

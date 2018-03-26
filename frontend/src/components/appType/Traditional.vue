@@ -28,10 +28,9 @@ export default {
     email2: ""   
     };
   },
-  props : ["firebase"],
-  created : function () {
-
-    // keeps checkign for firebase
+  props : ["firebase", "app_id"],
+  mounted : function () {
+    // keeps checking for firebase
     let vm = this;
     function checkFirebase(){
       if (vm.$props.firebase.auth().currentUser == null){
@@ -46,13 +45,13 @@ export default {
   methods: {
     sendTraditional : function() {
       let axios = require("axios");
-      
       let vm = this;
+
       axios
         .post("http://entropy7.nas.eckerd.edu:3000/submission/",{
           "requester" : vm.email1,
           "requestee" : vm.email2,
-          "app_id" : 1,
+          "app_id" : this.$props.app_id,
           "room" : ""
         })
         .then(function(response) {

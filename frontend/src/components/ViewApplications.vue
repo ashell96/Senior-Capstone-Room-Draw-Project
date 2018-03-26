@@ -55,7 +55,7 @@ module.exports = {
         {
           app_id: 3,
           app_name: "Traditional Fall 2018",
-          app_open: new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
+          app_open: new Date("2018-01-26T05:00:00.000Z").toLocaleString(),
           app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
           app_type: "traditional",
           app_term: 20172
@@ -96,13 +96,15 @@ module.exports = {
     },
     goToApplication: function(app) {
       if (app.app_type=='squatting'){
-        window.location = '/#/Squatting'; //go to Squatting Application
-        }
+        window.location = '/#/Squatting'
+      }
       else if (app.app_type=='omega'){
         window.location = '/#/Omega'
       }
       else if (app.app_type=='traditional'){
-        window.location = '/#/Traditional'
+        // We should now use this instead of the uncommented section below 
+        console.log("sending app_id: " + app.app_id);
+        this.$router.push({ name: 'Traditional', params: { app_id: app.app_id }})
       }
       else if (app.app_type=='themed'){
         window.location = '/#/Themed'
