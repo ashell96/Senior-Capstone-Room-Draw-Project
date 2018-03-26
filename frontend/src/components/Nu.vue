@@ -55,7 +55,7 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application", email:"", email2:"", email3:"", email4:"", email5:"", email6:"", email7
+    return { message: "Application", email:"", email2:"", email3:"", email4:"", email5:"", email6:"", email7 :""
     };
   },
   methods: {
