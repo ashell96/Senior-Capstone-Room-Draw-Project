@@ -54,7 +54,6 @@ CREATE TABLE request (
   submission_id  INT NOT NULL,
   request_status VARCHAR(30), # pending, approved, denied
   FOREIGN KEY (requester_email) REFERENCES student(email),
-  FOREIGN KEY (requestee_email) REFERENCES student(email),
   FOREIGN KEY (submission_id) REFERENCES submission(submission_id)
 );
 
