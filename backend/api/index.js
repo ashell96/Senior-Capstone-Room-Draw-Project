@@ -111,24 +111,10 @@ app.post("/submission", function(req,res){
         VALUES ("${requester}", "${requestee}", ${newSubID}, "pending");`;
 
         connection.query(sql2, function (error, results, fields) {
-            let newReqID = results.insertId;
             console.log("new request " + JSON.stringify(results));
-
-            let sql3 = `INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});`;
-            // Create a new submision/requests
-            connection.query(sql3, function (error, results, fields) {
-                console.log("new sub_request " + JSON.stringify(results));
-                res.send("Success...?");
-            });
+            res.send("Success...?");
         });
-    
-    
-    
     });
-
-
-
-
     //res.send(req.body);
     //console.log(req.body);
 })
@@ -170,14 +156,7 @@ function traditionalSubmission(requester, requestee, app_id, res) {
         connection.query(sql2, function (error, results, fields) {
             console.log("creating req");
             if (error) throw error;
-            let newReqID = results.insertId;
-            let sql3 = `INSERT INTO submissions_requests VALUES (${newSubID},${newReqID});`;
-
-            // Create a new submision/requests
-            connection.query(sql3, function (error, results, fields) {
-                console.log("new sub_request " + JSON.stringify(results));
-                res.send("Success...?");
-            });
+            res.send("Success...?");
         });
     });
 }
