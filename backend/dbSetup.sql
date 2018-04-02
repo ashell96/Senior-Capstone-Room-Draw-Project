@@ -41,6 +41,7 @@ CREATE TABLE submission (
   submission_date DATETIME NOT NULL DEFAULT NOW(),
   app_id INT NOT NULL, 
   room VARCHAR(30),
+  room_preference VARCHAR(30),
   sub_status VARCHAR(30),
   FOREIGN KEY (primary_student_email) REFERENCES student(email),
   FOREIGN KEY (app_id) REFERENCES application(app_id)
