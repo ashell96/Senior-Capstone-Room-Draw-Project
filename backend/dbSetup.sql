@@ -58,13 +58,6 @@ CREATE TABLE request (
   FOREIGN KEY (submission_id) REFERENCES submission(submission_id)
 );
 
-CREATE TABLE submissions_requests (
-    submission_id INT NOT NULL,
-    request_id INT NOT NULL,
-    FOREIGN KEY (submission_id) REFERENCES submission(submission_id),
-    FOREIGN KEY (request_id) REFERENCES request(request_id)
-);
-
 
 ## Test data
 
@@ -106,7 +99,3 @@ INSERT INTO request (requester_email, requestee_email, submission_id, request_st
 VALUES ("mdkopelm@eckerd.edu", "sabattle@eckerd.edu", 2, "pending");
 INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
 VALUES ("apsarafo@eckerd.edu", "awkimbre@eckerd.edu", 3, "pending");
-
-INSERT INTO submissions_requests VALUES (1,1);
-INSERT INTO submissions_requests VALUES (2,2);
-INSERT INTO submissions_requests VALUES (3,3);
