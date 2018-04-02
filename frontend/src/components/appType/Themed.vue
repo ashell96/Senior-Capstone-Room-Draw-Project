@@ -15,7 +15,7 @@
 <input v-model="email2" placeholder="Enter e-mail"> </p>
 
 
-<button class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
 </div>
 
 </template>
@@ -33,6 +33,10 @@ module.exports = {
   methods: {
     fun: function() {
       console.log("fun");
+    },
+    sendtoApps : function(){
+      window.location = '/#/ViewSubmissions'
+      
     }
   }
 };

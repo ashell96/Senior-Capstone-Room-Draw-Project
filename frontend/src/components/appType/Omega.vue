@@ -63,7 +63,7 @@
 </template>
 </template>
 
-<button v-on:click="sendToServer()" class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendToServer();sendtoApps()" class="btn btn-info btn-sm">Submit</button>
 
 </span>
 </template>
@@ -81,6 +81,9 @@ module.exports = {
   methods: {
     sendToServer: function() {
       console.log("fun");
+    },
+    sendtoApps : function(){
+      window.location = '/#/ViewSubmissions'
     }
   }
 };
