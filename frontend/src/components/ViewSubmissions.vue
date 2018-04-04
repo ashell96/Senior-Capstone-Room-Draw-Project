@@ -36,27 +36,32 @@ let axios = require("axios");
 module.exports = {
   data: function() {
     return {
-        submissions:"", 
-      // This is just default data for testing
-     
+        submissions:"",     
     };
   },
+  props: ["curUserEmail"],
   methods: {
-    
-    updateApps: function() {
+    loadApplications: function() {
       let vm = this;
-      axios
-        .get("http://entropy7.nas.eckerd.edu:3000/submissions/")
-        .then(function(response) {
-          vm.$set(vm, "submissions", response.data);
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+      if(this.$props.curUserEmail == "0"){
+        setTimeout(function(){vm.loadApplications()},1000);
+      } else {
+        axios
+              .post("http://entropy7.nas.eckerd.edu:3000/mySubmissions/", {
+                myEmail: this.$props.curUserEmail
+              })
+              .then(function(response) {
+                vm.$set(vm, "submissions", response.data);
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+      }
+   
     }
   },
   created: function() {
-    this.updateApps();
+    this.loadApplications();
   }
 };
 </script>
