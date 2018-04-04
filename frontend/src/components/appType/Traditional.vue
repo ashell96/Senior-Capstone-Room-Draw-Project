@@ -15,7 +15,7 @@
 <input v-model="email2" placeholder="Enter e-mail"> </p>
 
 
-<button v-on:click="sendTraditional" class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendTraditional(); sendtoApps()"  class="btn btn-info btn-sm">Submit</button>
 </div>
 
 </template>
@@ -61,8 +61,13 @@ export default {
         })
         .catch(function(error) {
           console.log(error);
-        });
+        })
+    
 
+    },
+    sendtoApps : function(){
+      window.location = '/#/ViewSubmissions'
+      
     }
   }
 };

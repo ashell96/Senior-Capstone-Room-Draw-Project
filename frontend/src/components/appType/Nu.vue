@@ -46,7 +46,7 @@
 
 
 
-<button class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
 </span>
 
 </template>
@@ -60,6 +60,10 @@ module.exports = {
   methods: {
     fun: function() {
       console.log("fun");
+    },
+    sendtoApps : function(){
+      window.location = '/#/ViewSubmissions'
+      
     }
   }
 };
