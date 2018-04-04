@@ -26,17 +26,20 @@ export default new Router({
         {
             path: '/',
             name: 'Home',
-            component: Home
+            component: Home,
+            props: true
         },
         {
             path: '/Squatting',
             name: 'Squatting',
-            component: Squatting
+            component: Squatting,
+            props: true
         },
         {
             path: '/viewApps',
             name: 'viewApps',
-            component: ViewApplications
+            component: ViewApplications,
+            props: true
         },
         {
 
@@ -48,7 +51,8 @@ export default new Router({
         {
             path: '/housingRules',
             name: 'HousingRules',
-            component: HousingRules
+            component: HousingRules,
+            props: true
         },
         {
             path: '/register',
@@ -59,44 +63,50 @@ export default new Router({
         {
             path: '/roomSelector',
             name: 'RoomSelector',
-            component: RoomSelector
+            component: RoomSelector,
+            props: true
         },
         {
             path: "/omega",
             name: 'Omega',
-            component: Omega
+            component: Omega,
+            props: true
         },
         {
             path: "/offcampus",
             name: 'OffCampus',
-            component: OffCampus
+            component: OffCampus,
+            props: true
         },
         {
             path: "/nu",
             name: 'Nu',
-            component: Nu
+            component: Nu,
+            props: true
         },
         {
             path: "/themed",
             name: 'Themed',
-            component: Themed
+            component: Themed,
+            props: true
         },
         {
             path: "/ViewSubmissions",
             name: 'ViewSubmissions',
-            component: ViewSubmissions
-
+            component: ViewSubmissions,
+            props: true
         },
         {
             path: '/RoommateRequests',
             name: 'RoommateRequests',
-            component: RoommateRequests
+            component: RoommateRequests,
+            props: true
         },
         {
             path: '/ViewRequests',
             name: 'ViewRequests',
-            component: ViewRequests
+            component: ViewRequests,
+            props: true
         }
-
     ]
 })
