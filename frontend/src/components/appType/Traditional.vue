@@ -9,65 +9,52 @@
 </h5>
 
 <p>Please enter your e-mail: 
-<input v-model="email1" placeholder="Enter e-mail"> </p>
+<input disabled v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please enter your roommate's e-mail: 
-<input v-model="email2" placeholder="Enter e-mail"> </p>
+<input v-model="roommateEmail" placeholder="Enter e-mail"> </p>
 
 
-<button v-on:click="sendTraditional(); sendtoApps()"  class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendTraditional();" class="btn btn-info btn-sm">Submit</button>
 </div>
 
 </template>
 
-<script>
-export default {
+<script>export default {
   data: function() {
-    return { message: "Application",
-    email1: "",
-    email2: ""   
+    return {
+      myEmail: this.$props.curUserEmail,
+      roommateEmail: ""
     };
   },
-  props : ["firebase", "app_id"],
-  mounted : function () {
-    // keeps checking for firebase
-    let vm = this;
-    function checkFirebase(){
-      if (vm.$props.firebase.auth().currentUser == null){
-        console.log("firebase not found");
-        setTimeout(checkFirebase,1000);
-      } else {
-       vm.email1 = vm.$props.firebase.auth().currentUser.email;
-     }
+  props: ["app_id", "curUserEmail"],
+  watch: {
+    // This waits for the curUserEmail to update from props
+    curUserEmail: function(newVal, oldVal) {
+      this.myEmail = newVal;
     }
-    checkFirebase();
   },
   methods: {
-    sendTraditional : function() {
+    sendTraditional: function() {
       let axios = require("axios");
       let vm = this;
 
       axios
-        .post("http://entropy7.nas.eckerd.edu:3000/submission/",{
-          "requester" : vm.email1,
-          "requestee" : vm.email2,
-          "app_id" : this.$props.app_id,
-          "room" : ""
+        .post("http://entropy7.nas.eckerd.edu:3000/submission/", {
+          "requester": vm.myEmail,
+          "requestee": vm.roommateEmail,
+          "app_id": this.$props.app_id,
         })
         .then(function(response) {
           console.log(response);
-          //vm.$set(vm, "applications", response.data);
           // Do something on success
+          window.location = '/#/ViewSubmissions';
         })
         .catch(function(error) {
           console.log(error);
+          alert(error);
+          // We need a better way of showing an error
         })
-    
-
-    },
-    sendtoApps : function(){
-      window.location = '/#/ViewSubmissions'
-      
     }
   }
 };

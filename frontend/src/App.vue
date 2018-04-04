@@ -11,7 +11,6 @@
 
         <span>
           <img v-if="loggedIn" :src="profilePic" class="img-circle img-responsive" v-on:click="signOut" height=40>
-          <!--<router-link v-else class="py-2 d-none d-md-inline-block" to="Register">Sign In</router-link>-->
         </span>
       </div>
     </nav>
@@ -30,7 +29,7 @@ export default {
       loggedIn: false,
       profilePic: "https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png",
       topFirebase: firebase,
-      tempEmail : "0"
+      tempEmail: "0"
     };
   },
   methods: {
@@ -61,13 +60,9 @@ export default {
     this.signIn();
   }
 };
-
-// Any script we want to run all the time could go here
 </script>
-
 
 <style>
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "assets/css/App.css";
 </style>
-

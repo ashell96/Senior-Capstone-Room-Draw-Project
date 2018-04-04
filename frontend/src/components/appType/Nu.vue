@@ -10,42 +10,15 @@
     occupy the unit. When two or more persons withdraw, at any time, from the unit the remaining members <u>will lose</u> the right to occupy the unit.</b></p>
 
 <p>Please enter your e-mail: 
-<input v-model="email" placeholder="Enter e-mail"> </p>
+<input v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please enter the e-mails of your other roommates</p>
-<p>Roommate #2 <input v-model="email2" placeholder="Enter e-mail"> </p>
-<p>Roommate #3 <input v-model="email3" placeholder="Enter e-mail"> </p>
-<p>Roommate #4 <input v-model="email4" placeholder="Enter e-mail"> </p>
-<p>Roommate #5 <input v-model="email5" placeholder="Enter e-mail"> </p>
-<p>Roommate #6 <input v-model="email6" placeholder="Enter e-mail"> </p>
-<p>Roommate #7 <input v-model="email7" placeholder="Enter e-mail"> </p>
-
-
-
-<template v-if="renovated">
-  <template v-if="standard">
-    <p> Choose one </p></template>
-    <template v-else>
-       <p> Please enter the e-mails of the other 3 roommates</p>
-      <p> Roommate 2 <input v-model="email2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="email3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="email4" placeholder="Roommate #4 email"></p>
-    </template>
-    </template>
-
-<template v-if="standard">
-  <template v-if="renovated">
-    <p> </p></template>
-    <template v-else>
-       <p> Please enter the e-mails of the other 3 roommates</p>
-    <p> Roommate 2 <input v-model="email2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="email3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="email4" placeholder="Roommate #4 email"></p>
-    </template>
-    </template>
-
-
-
+<p>Roommate #2 <input v-model="roommateEmail2" placeholder="Enter e-mail"> </p>
+<p>Roommate #3 <input v-model="roommateEmail3" placeholder="Enter e-mail"> </p>
+<p>Roommate #4 <input v-model="roommateEmail4" placeholder="Enter e-mail"> </p>
+<p>Roommate #5 <input v-model="roommateEmail5" placeholder="Enter e-mail"> </p>
+<p>Roommate #6 <input v-model="roommateEmail6" placeholder="Enter e-mail"> </p>
+<p>Roommate #7 <input v-model="roommateEmail7" placeholder="Enter e-mail"> </p>
 <button v-on:click="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
 </span>
 
@@ -54,16 +27,20 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application", email:"", email2:"", email3:"", email4:"", email5:"", email6:"", email7:""
+    return {
+      myEmail: this.$props.curUserEmail,
+      roommateEmail2: "",
+      roommateEmail3: "",
+      roommateEmail4: "",
+      roommateEmail5: "",
+      roommateEmail6: "",
+      roommateEmail7: ""
     };
   },
+  props: ["curUserEmail"],
   methods: {
-    fun: function() {
-      console.log("fun");
-    },
-    sendtoApps : function(){
-      window.location = '/#/ViewSubmissions'
-      
+    sendtoApps: function() {
+      window.location = '/#/ViewSubmissions';
     }
   }
 };

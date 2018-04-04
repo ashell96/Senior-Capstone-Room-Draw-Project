@@ -10,7 +10,7 @@
 
 
 <p>Please enter your e-mail: 
-<input v-model="email" placeholder="Enter e-mail"> </p>
+<input v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please check one:
 <br> 
@@ -24,9 +24,9 @@
     <p> Choose one </p></template>
     <template v-else>
        <p> Please enter the e-mails of the other 3 roommates</p>
-      <p> Roommate 2 <input v-model="email2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="email3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="email4" placeholder="Roommate #4 email"></p>
+      <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
+     <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
+    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
     </template>
     </template>
 
@@ -35,9 +35,9 @@
     <p> </p></template>
     <template v-else>
        <p> Please enter the e-mails of the other 3 roommates</p>
-    <p> Roommate 2 <input v-model="email2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="email3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="email4" placeholder="Roommate #4 email"></p>
+    <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
+     <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
+    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
     </template>
     </template>
 
@@ -51,16 +51,18 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application", email:this.$props.curUserEmail, email2:"", email3:"", 
-    email4:"", renovated:"", standard:""
+    return {
+      myEmail: this.$props.curUserEmail,
+      roommateEmail2: "",
+      roommateEmail3: "",
+      roommateEmail4: "",
+      renovated: "",
+      standard: ""
     };
   },
-  props : ["curUserEmail"],
+  props: ["curUserEmail"],
   methods: {
-    fun: function() {
-      console.log("fun");
-    },
-    sendtoApps : function(){
+    sendtoApps: function() {
       window.location = '/#/ViewSubmissions'
     }
   }

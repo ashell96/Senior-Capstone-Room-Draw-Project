@@ -23,20 +23,15 @@
 <script>
 module.exports = {
   data: function() {
-    return { message: "Application",
-    email: "",
-    email2:"" 
-      
-    
+    return {
+      myEmail: this.$props.curUserEmail,
+      roommateEmail: ""
     };
   },
+  props: ["curUserEmail"],
   methods: {
-    fun: function() {
-      console.log("fun");
-    },
-    sendtoApps : function(){
+    sendtoApps: function() {
       window.location = '/#/ViewSubmissions'
-      
     }
   }
 };
