@@ -9,6 +9,7 @@ import Register from '@/components/Register'
 import RoomSelector from '@/components/RoomSelector'
 import ViewSubmissions from '@/components/ViewSubmissions'
 import RoommateRequests from '@/components/RoommateRequests'
+import ViewRequests from '@/components/ViewRequests'
 
 // App types
 import Omega from '@/components/appType/Omega'
@@ -53,7 +54,7 @@ export default new Router({
             path: '/register',
             name: 'Register',
             component: Register,
-            props : true
+            props: true
         },
         {
             path: '/roomSelector',
@@ -61,9 +62,9 @@ export default new Router({
             component: RoomSelector
         },
         {
-        path: "/omega",
-        name: 'Omega',
-        component: Omega
+            path: "/omega",
+            name: 'Omega',
+            component: Omega
         },
         {
             path: "/offcampus",
@@ -71,9 +72,9 @@ export default new Router({
             component: OffCampus
         },
         {
-        path: "/nu",
-        name: 'Nu',
-        component: Nu
+            path: "/nu",
+            name: 'Nu',
+            component: Nu
         },
         {
             path: "/themed",
@@ -90,6 +91,11 @@ export default new Router({
             path: '/RoommateRequests',
             name: 'RoommateRequests',
             component: RoommateRequests
+        },
+        {
+            path: '/ViewRequests',
+            name: 'ViewRequests',
+            component: ViewRequests
         }
 
     ]
