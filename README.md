@@ -20,3 +20,17 @@ cd Sandpiper/frontend/
 npm install
 npm run serve
 ```
+
+## Backend Information
+### room_preference 
+Field in submission table can have the following inputs:
+```
+squatting_new_room
+squatting_same_room
+off_rennovated
+off_not_rennovated
+omega_two_doubles
+omega_four_singles
+omega_doubles_with_single
+* the complex/house/room num for squatting *
+```

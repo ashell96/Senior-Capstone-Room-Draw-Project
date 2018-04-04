@@ -13,15 +13,9 @@
 
 module.exports = {
   data: function() {
-    return { message: "Link to the 2018 Housing Rules:"
-      
-    
+    return {
+      message: "Link to the 2018 Housing Rules:"
     };
   },
-  methods: {
-    fun: function() {
-      console.log("fun");
-    }
-  }
 };
 </script>
