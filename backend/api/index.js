@@ -168,13 +168,22 @@ app.post("/submission2", function(req,res){
     let app_id = req.body.app_id;
     determineAppType(app_id, function(app_type){
         if (app_type == 'squatting') console.log("Do squat");
-        if (app_type == 'omega') console.log("Do omega");
-        if (app_type == 'nu') console.log("Do nu");
-        if (app_type == 'themed') console.log("Do theme");
-        if (app_type == 'traditional') {
+        else if (app_type == 'omega') console.log("Do omega");
+        else if (app_type == 'nu') console.log("Do nu");
+        else if (app_type == 'themed') console.log("Do theme");
+        else if (app_type == 'traditional') {
             console.log("Do tradition");
             traditionalSubmission(requester, requestee, app_id, res);
         }
-        if (app_type == 'off-campus') console.log("Do off-campus");
+        else if (app_type == 'off-campus') console.log("Do off-campus");
+        else {
+            res.error("Application type not known");
+        }
+
     });
 });
+
+app.get("mySubmissions", function (req,res){
+    const sql = "SELECT * FROM submission WHERE primary_student_email = " + connection.escape(req.params.myEmail); 
+    dbQuery(req,res,sql);
+})
