@@ -66,9 +66,17 @@ INSERT INTO term VALUES (20172, "Spring 2017 Room Draw");
 INSERT INTO term VALUES (20162, "Spring 2016 Room Draw");
 
 INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
-VALUES ('Squatting Fall 2018','2018-11-26 00:00:00','2018-11-29 00:00:00', "squatting",20172);
+VALUES ('Squatting 2018','2018-01-26 00:00:00','2018-11-29 00:00:00', "squatting",20172);
 INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
-VALUES ('Omega Fall 2018','2018-11-26 00:00:00','2018-11-29 00:00:00', "omega",20172);
+VALUES ('Omega 2018','2018-01-26 00:00:00','2018-11-29 00:00:00', "omega",20172);
+INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
+VALUES ('Nu 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "nu",20172);
+INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
+VALUES ('Singles 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "single",20172);
+INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
+VALUES ('Off Campus 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "off_campus",20172);
+INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
+VALUES ('Themed 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "themed",20172);
 INSERT INTO application (app_name,app_open, app_close, app_type, app_term)
 VALUES ('Traditionals 2018','2018-01-26 00:00:00','2019-11-29 00:00:00', "traditional",20172);
 
