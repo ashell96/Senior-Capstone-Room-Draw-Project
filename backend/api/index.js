@@ -183,7 +183,7 @@ app.post("/submission2", function(req,res){
     });
 });
 
-app.get("mySubmissions", function (req,res){
+app.post("mySubmissions", function (req,res){
     const sql = "SELECT * FROM submission WHERE primary_student_email = " + connection.escape(req.params.myEmail); 
     dbQuery(req,res,sql);
 })
