@@ -1,6 +1,6 @@
 <template>
 <span>
-    <h2 >Currently Pending Roommate Requests:</h2>
+    <h2 >Currently Pending Roommate Requests: {{curUserEmail}}</h2>
     <div id="editor">
         <table class="table">
             <thead>
@@ -10,16 +10,19 @@
                     <th scope="col">Requestee E-mail:</th>
                     <th scope="col">Submission Id:</th>
                     <th scope="col">Request Status:</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 
                 <tr v-for="item in requests" :key="item.request_id">
-                   <td id="sub_id">{{item.request_id}}</td>
+                  <div v-if="item.requestee_email == curUserEmail">
+                   <td  id="sub_id">{{item.request_id}}</td>
                     <td id="stu_email">{{item.requester_email}}</td>
                     <td id="sub_date">{{item.requestee_email}}</td>
                     <td id="app_id">{{item.submission_id}}</td>
                     <td id="room">{{item.request_status}}</td>
+                  </div>
                 </tr>
             </tbody>
         </table>
@@ -33,10 +36,12 @@ module.exports = {
   data: function() {
     return {
         requests:"", 
+       
       // This is just default data for testing
      
     };
   },
+  props: ['curUserEmail'],
   methods: {
     
     updateApps: function() {
@@ -51,6 +56,8 @@ module.exports = {
         });
     }
   },
+  
+
   created: function() {
     this.updateApps();
   }
