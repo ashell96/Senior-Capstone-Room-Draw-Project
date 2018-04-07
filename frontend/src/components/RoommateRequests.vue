@@ -1,6 +1,6 @@
 <template>
 <span>
-    <h2 >Currently Pending Roommate Requests: {{curUserEmail}}</h2>
+    <h2 >Currently Pending Roommate Requests:</h2>
     <div id="editor">
         <table class="table">
             <thead>
@@ -16,13 +16,13 @@
             <tbody>
                 
                 <tr v-for="item in requests" :key="item.request_id">
-                  <div v-if="item.requestee_email == curUserEmail">
-                   <td  id="sub_id">{{item.request_id}}</td>
-                    <td id="stu_email">{{item.requester_email}}</td>
-                    <td id="sub_date">{{item.requestee_email}}</td>
-                    <td id="app_id">{{item.submission_id}}</td>
-                    <td id="room">{{item.request_status}}</td>
-                  </div>
+                    <td  v-if="item.requestee_email == curUserEmail" id="sub_id">{{item.request_id}}</td>
+                    <td v-if="item.requestee_email == curUserEmail" id="stu_email">{{item.requester_email}}</td>
+                    <td v-if="item.requestee_email == curUserEmail" id="sub_date">{{item.requestee_email}}</td>
+                    <td v-if="item.requestee_email == curUserEmail" id="app_id">{{item.submission_id}}</td>
+                    <td v-if="item.requestee_email == curUserEmail" id="room">{{item.request_status}}</td>
+                    <button class="btn btn-info btn-md" v-if="item.requestee_email == curUserEmail" > View Request </button>
+                  
                 </tr>
             </tbody>
         </table>
