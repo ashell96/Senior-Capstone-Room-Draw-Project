@@ -21,7 +21,7 @@
                     <td v-if="item.requestee_email == curUserEmail" id="sub_date">{{item.requestee_email}}</td>
                     <td v-if="item.requestee_email == curUserEmail" id="app_id">{{item.submission_id}}</td>
                     <td v-if="item.requestee_email == curUserEmail" id="room">{{item.request_status}}</td>
-                    <button class="btn btn-info btn-md" v-if="item.requestee_email == curUserEmail" > View Request </button>
+                    <button v-if="item.requestee_email == curUserEmail" v-on:click="ViewReq(item)" class="btn btn-info btn-md"> View Request </button>
                   
                 </tr>
             </tbody>
@@ -43,8 +43,14 @@ module.exports = {
   },
   props: ['curUserEmail'],
   methods: {
-    
-    updateApps: function() {
+   
+  //send requester_id to ViewRequests
+  ViewReq:function(app){
+    this.$router.push({ name: 'ViewRequests', params: { requester_email: app.requester_email }});
+
+  },
+   
+  updateApps: function() {
       let vm = this;
       axios
         .get("http://entropy7.nas.eckerd.edu:3000/requests/")
@@ -54,12 +60,12 @@ module.exports = {
         .catch(function(error) {
           console.log(error);
         });
-    }
+    },
   },
-  
 
   created: function() {
     this.updateApps();
+  
   }
 };
 </script>
