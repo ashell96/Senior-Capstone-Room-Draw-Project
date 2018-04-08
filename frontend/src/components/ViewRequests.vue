@@ -1,12 +1,8 @@
 <template>
 <span>
 <h1>Viewing Rommate Request </h1>
-<p> You have received a roommate request from ''</p>
-<p>Please enter your e-mail: 
-<input v-model="email" placeholder="Enter e-mail"> </p>
-
-
-
+<p> You have received a roommate request from {{requester_email}}</p>
+<p>Room Request:  </p>
 <button class="btn btn-info btn-md">Click to Accept</button>
 <br>
 <br>
@@ -20,17 +16,15 @@
 let axios = require("axios");
 module.exports = {
   data: function() {
-    return { message: ""
+    return { message: "",
+    requester: this.$props.requester_email
     };
   },
+  props:['requester_email'],
   methods: {
     fun: function() {
       console.log("fun");
-    },
-    sendtoApps : function(){
-      window.location = '/#/ViewSubmissions'
-      
-    }
   }
+  },
 };
 </script>
