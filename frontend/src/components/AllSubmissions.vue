@@ -14,7 +14,7 @@
   <option >Off-Campus Housing/Alta Mar</option>
  </select>
  <br>
-   <button class="btn btn-info btn-md" v-on:click="ViewAppSubmissions(value)">Submit</button>
+   <button class="btn btn-info btn-md" v-on:click="ViewAppSubmissions(choice)">Submit</button>
 
     </div>
     </span>
@@ -32,7 +32,7 @@ module.exports = {
   props: ["curUserEmail"],
   methods: {
     ViewAppSubmissions:function(item){
-        if (value == "omega"){
+        if (choice == "omega"){
             this.$router.push({ name: 'ViewAllSubmissions', params: { requester_email: app.requester_email, submission_id: app.submission_id }})
         }
 
