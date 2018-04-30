@@ -36,7 +36,7 @@ module.exports = {
         setTimeout(function(){vm.loadApplications()},1000);
       } else {
         axios
-              .get("http://entropy7.nas.eckerd.edu:3000/mySubmissions/", {
+              .get("http://entropy7.nas.eckerd.edu:3000/submissions/", {
                 myEmail: this.$props.curUserEmail
               })
               .then(function(response) {
