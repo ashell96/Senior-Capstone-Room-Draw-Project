@@ -2,15 +2,16 @@
 <span>
     <h1 class="display-4">Application Submissions</h1>
     <div id="editor">
-  <select  class="form-control" id="sel1">
-  <option value="omega" >Omega</option>
-  <option value="nu">Nu</option>
-  <option value="traditional">Traditional (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
-  <option value="themed">Themed (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
-  <option value="sigma">Sigma/West Lodge </option>
-  <option value="oberg">Oberg Suites</option>
-  <option value="singles">Singles</option>
-  <option value="offCampus">Off-Campus Housing/Alta Mar</option>
+  <select  class="form-control" id="sel1" v-model="choice">
+  <option disabled value="">Please select housing</option>
+  <option >Omega</option>
+  <option >Nu</option>
+  <option >Traditional (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
+  <option >Themed (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
+  <option >Sigma/West Lodge </option>
+  <option >Oberg Suites</option>
+  <option >Singles</option>
+  <option >Off-Campus Housing/Alta Mar</option>
  </select>
  <br>
    <button class="btn btn-info btn-md" v-on:click="ViewAppSubmissions(value)">Submit</button>
@@ -24,14 +25,15 @@ let axios = require("axios");
 module.exports = {
   data: function() {
     return {
-        submissions:"",     
+        submissions:"",
+        choice: "",     
     };
   },
   props: ["curUserEmail"],
   methods: {
     ViewAppSubmissions:function(item){
         if (value == "omega"){
-            this.$router.push({ name: 'Traditional'})
+            this.$router.push({ name: 'ViewAllSubmissions', params: { requester_email: app.requester_email, submission_id: app.submission_id }})
         }
 
     }, 
