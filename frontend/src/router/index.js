@@ -11,6 +11,7 @@ import ViewSubmissions from '@/components/ViewSubmissions'
 import RoommateRequests from '@/components/RoommateRequests'
 import ViewRequests from '@/components/ViewRequests'
 import AllSubmissions from '@/components/AllSubmissions'
+import ViewAllSubmissions from '@/components/ViewAllSubmissions'
 // App types
 import Omega from '@/components/appType/Omega'
 import OffCampus from '@/components/appType/OffCampus'
@@ -113,6 +114,12 @@ export default new Router({
         name: 'AllSubmissions',
         component: AllSubmissions,
         props: true
+        },
+        {
+            path: '/ViewAllSubmissions',
+            name: 'ViewAllSubmissions',
+            component: ViewAllSubmissions,
+            props: true
         }
     ]
 })
