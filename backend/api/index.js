@@ -161,7 +161,7 @@ function traditionalSubmission(requester, requestee, app_id, res) {
     });
 }
 
-
+/*
 app.post("/submission2", function(req,res){
     let requester = req.body.requester;
     let requestee = req.body.requestee;
@@ -182,6 +182,69 @@ app.post("/submission2", function(req,res){
 
     });
 });
+*/
+
+app.post("/submission3", function(req,res){
+    let requester = req.body.requester; // email
+    let requestees = req.body.requestee; // arr of emails
+    let app_id = req.body.app_id; // app id
+    let room = req.body.room;
+    let room_preference = req.body.room_preference;
+
+    everySubmission(requester, requestee, app_id, res);
+    /*determineAppType(app_id, function(app_type){
+        if (app_type == 'squatting') console.log("Do squat");
+        else if (app_type == 'omega') console.log("Do omega");
+        else if (app_type == 'nu') console.log("Do nu");
+        else if (app_type == 'themed') console.log("Do theme");
+        else if (app_type == 'traditional') {
+            console.log("Do tradition");
+            traditionalSubmission(requester, requestee, app_id, res);
+        }
+        else if (app_type == 'off-campus') console.log("Do off-campus");
+        else {
+            res.error("Application type not known");
+        }
+
+    });*/
+});
+
+
+
+function everySubmission(requester, requestee, app_id, res) {
+    // A funciton that should work to do submissions of all types!
+
+    let requester = req.body.requester; // email
+    let requestees = req.body.requestee; // arr of emails
+    let app_id = req.body.app_id; // app id
+    let room = req.body.room; // room number
+    let room_preference = req.body.room_preference;
+    //let status = "pending";
+    // Create a new submission
+    let sql = `INSERT INTO submission (primary_student_email, app_id, sub_status, room, room_preference)
+        VALUES ("${requester}", "${app_id}", "pending", "${room}", "${room_preference}")`;
+
+    connection.query(sql, function (error, results, fields) {
+        console.log("creating submission");
+        if (error) throw error;
+        let newSubID = results.insertId;
+
+        for (let i = 0; i < requestees.length; i++){
+            // Create a new request
+            let sql2 = `INSERT INTO request (requester_email, requestee_email, submission_id, request_status)
+                VALUES ("${requester}", "${requestees[i]}", ${newSubID}, "pending");`;
+
+            connection.query(sql2, function (error, results, fields) {
+                console.log("creating requests");
+                if (error) throw error;
+            });
+        }
+
+        res.send("Success...?");
+
+    });
+}
+
 
 app.post("/mySubmissions", function (req,res){
     const sql = "SELECT * FROM submission WHERE primary_student_email = " 

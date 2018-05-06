@@ -1,6 +1,6 @@
 <template>
 <span>
-    <h1 class="display-1">Application Choices</h1>
+    <h1 class="display-1">View Submissions</h1>
     <div id="editor">
         <table class="table">
             <thead>
