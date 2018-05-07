@@ -13,13 +13,13 @@
 <input v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please enter the e-mails of your other roommates</p>
-<p>Roommate #2 <input v-model="roommateEmail2" placeholder="Enter e-mail"> </p>
-<p>Roommate #3 <input v-model="roommateEmail3" placeholder="Enter e-mail"> </p>
-<p>Roommate #4 <input v-model="roommateEmail4" placeholder="Enter e-mail"> </p>
-<p>Roommate #5 <input v-model="roommateEmail5" placeholder="Enter e-mail"> </p>
-<p>Roommate #6 <input v-model="roommateEmail6" placeholder="Enter e-mail"> </p>
-<p>Roommate #7 <input v-model="roommateEmail7" placeholder="Enter e-mail"> </p>
-<button v-on:click="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
+<p>Roommate #2 <input v-model="requestees[0]" placeholder="Enter e-mail"> </p>
+<p>Roommate #3 <input v-model="requestees[1]" placeholder="Enter e-mail"> </p>
+<p>Roommate #4 <input v-model="requestees[2]" placeholder="Enter e-mail"> </p>
+<p>Roommate #5 <input v-model="requestees[3]" placeholder="Enter e-mail"> </p>
+<p>Roommate #6 <input v-model="requestees[4]" placeholder="Enter e-mail"> </p>
+<p>Roommate #7 <input v-model="requestees[5]" placeholder="Enter e-mail"> </p>
+<button v-on:click="sendItt()" class="btn btn-info btn-sm">Submit</button>
 </span>
 
 </template>
@@ -29,18 +29,31 @@ module.exports = {
   data: function() {
     return {
       myEmail: this.$props.curUserEmail,
-      roommateEmail2: "",
-      roommateEmail3: "",
-      roommateEmail4: "",
-      roommateEmail5: "",
-      roommateEmail6: "",
-      roommateEmail7: ""
+      requestees : ["","","","","","",""]
     };
   },
-  props: ["curUserEmail"],
+  props: ["app_id","curUserEmail"],
   methods: {
-    sendtoApps: function() {
-      window.location = '/#/ViewSubmissions';
+    sendItt: function() {
+      let axios = require("axios");
+      let vm = this;
+
+      axios
+        .post("http://entropy7.nas.eckerd.edu:3000/submission3/", {
+          "requester": vm.myEmail,
+          "requestee": vm.requestees,
+          "app_id": this.$props.app_id,
+        })
+        .then(function(response) {
+          console.log(response);
+          // Do something on success
+          window.location = '/#/ViewSubmissions';
+        })
+        .catch(function(error) {
+          console.log(error);
+          alert(error);
+          // We need a better way of showing an error
+        })
     }
   }
 };

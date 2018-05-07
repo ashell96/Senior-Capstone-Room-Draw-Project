@@ -191,6 +191,8 @@ app.post("/submission3", function(req,res){
     let room = req.body.room;
     let room_preference = req.body.room_preference;
 
+    console.log(requester, requestees, app_id, room, room_preference);
+
     everySubmission(requester, requestees, app_id, room, room_preference, res);
     /*determineAppType(app_id, function(app_type){
         if (app_type == 'squatting') console.log("Do squat");

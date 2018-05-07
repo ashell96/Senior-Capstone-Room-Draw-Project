@@ -75,7 +75,7 @@ export default new Router({
         },
         {
             path: "/offcampus",
-            name: 'OffCampus',
+            name: 'Off_campus',
             component: OffCampus,
             props: true
         },

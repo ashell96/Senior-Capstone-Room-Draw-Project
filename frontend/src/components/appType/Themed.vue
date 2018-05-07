@@ -9,10 +9,10 @@
 </h5>
 
 <p>Please enter your e-mail: 
-<input v-model="myEmail" placeholder="Enter e-mail"> </p>
+<input disabled v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please enter your roommate's e-mail: 
-<input v-model="roommateEmail" placeholder="Enter e-mail"> </p>
+<input v-model="roommateEmail[0]" placeholder="Enter e-mail"> </p>
 
 
 <button v-on:click="sendItt()" class="btn btn-info btn-sm">Submit</button>
@@ -25,7 +25,7 @@ module.exports = {
   data: function() {
     return {
       myEmail: this.$props.curUserEmail,
-      roommateEmail: ""
+      roommateEmail: [""]
     };
   },
   props: ["app_id","curUserEmail"],
@@ -33,12 +33,6 @@ module.exports = {
     sendItt: function() {
       let axios = require("axios");
       let vm = this;
-      console.log({
-        "requester": vm.myEmail,
-          "requestee": vm.roommateEmail,
-          "app_id": this.$props.app_id,
-      })
-      
 
       axios
         .post("http://entropy7.nas.eckerd.edu:3000/submission3/", {
@@ -56,7 +50,6 @@ module.exports = {
           alert(error);
           // We need a better way of showing an error
         })
-        
     }
   }
 };

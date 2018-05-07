@@ -11,39 +11,17 @@
 
 <p>Please enter your e-mail: 
 <input v-model="myEmail" placeholder="Enter e-mail"> </p>
-
-<p>Please check one:
-<br> 
-<input type="checkbox" v-model="renovated"> Renovated Apartment
 <br>
-<input type="checkbox" v-model="standard"> Standard Apartment
+Renovated Apartment?: 
+<input type="checkbox" v-model="renovated">
 </p>
 
-<template v-if="renovated">
-  <template v-if="standard">
-    <p> Choose one </p></template>
-    <template v-else>
-       <p> Please enter the e-mails of the other 3 roommates</p>
-      <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
-    </template>
-    </template>
+  <p> Please enter the e-mails of the other 3 roommates</p>
+  <p> Roommate 2 <input v-model="requestees[0]" placeholder="Roommate #2 email"> </p>
+  <p> Roommate 3 <input v-model="requestees[1]" placeholder="Roommate #3 email"></p>
+  <p> Roommate 4 <input v-model="requestees[2]" placeholder="Roommate #4 email"></p>
+  <button v-on:click ="sendtoApps(); getPreference();" class="btn btn-info btn-sm">Submit</button>
 
-<template v-if="standard">
-  <template v-if="renovated">
-    <p> </p></template>
-    <template v-else>
-       <p> Please enter the e-mails of the other 3 roommates</p>
-    <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
-     <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
-    </template>
-    </template>
-
-
-
-<button v-on:click ="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
 </span>
 
 </template>
@@ -53,18 +31,39 @@ module.exports = {
   data: function() {
     return {
       myEmail: this.$props.curUserEmail,
-      roommateEmail2: "",
-      roommateEmail3: "",
-      roommateEmail4: "",
-      renovated: "",
-      standard: ""
+      requestees : ["","",""],
+      renovated: false,
+      room_preference: ""
     };
   },
-  props: ["curUserEmail"],
+  props: ["app_id","curUserEmail"],
   methods: {
-    sendtoApps: function() {
-      window.location = '/#/ViewSubmissions'
+      sendItt: function() {
+      let axios = require("axios");
+      let vm = this;
+
+      axios
+        .post("http://entropy7.nas.eckerd.edu:3000/submission3/", {
+          "requester": vm.myEmail,
+          "requestee": vm.requestees,
+          "app_id": this.$props.app_id,
+          "room_preference" : getPreference()
+        })
+        .then(function(response) {
+          console.log(response);
+          // Do something on success
+          window.location = '/#/ViewSubmissions';
+        })
+        .catch(function(error) {
+          console.log(error);
+          alert(error);
+          // We need a better way of showing an error
+        })
+    },
+    getPreference: function(){
+      console.log(this.renovated ? "off_rennovated" : "off_not_rennovated");
+      return this.renovated ? "off_rennovated" : "off_not_rennovated";
     }
-  }
+  },
 };
 </script>
