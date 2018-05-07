@@ -38,10 +38,10 @@ module.exports = {
           "requestee": vm.roommateEmail,
           "app_id": this.$props.app_id,
       })
-      /*
+      
 
       axios
-        .post("http://entropy7.nas.eckerd.edu:3000/submission/", {
+        .post("http://entropy7.nas.eckerd.edu:3000/submission3/", {
           "requester": vm.myEmail,
           "requestee": vm.roommateEmail,
           "app_id": this.$props.app_id,
@@ -56,7 +56,7 @@ module.exports = {
           alert(error);
           // We need a better way of showing an error
         })
-        */
+        
     }
   }
 };

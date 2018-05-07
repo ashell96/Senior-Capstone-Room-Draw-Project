@@ -191,7 +191,7 @@ app.post("/submission3", function(req,res){
     let room = req.body.room;
     let room_preference = req.body.room_preference;
 
-    everySubmission(requester, requestee, app_id, res);
+    everySubmission(requester, requestees, app_id, room, room_preference, res);
     /*determineAppType(app_id, function(app_type){
         if (app_type == 'squatting') console.log("Do squat");
         else if (app_type == 'omega') console.log("Do omega");
@@ -211,14 +211,10 @@ app.post("/submission3", function(req,res){
 
 
 
-function everySubmission(requester, requestee, app_id, res) {
+function everySubmission(requester, requestees, app_id, room, room_preference, res) {
     // A funciton that should work to do submissions of all types!
 
-    let requester = req.body.requester; // email
-    let requestees = req.body.requestee; // arr of emails
-    let app_id = req.body.app_id; // app id
-    let room = req.body.room; // room number
-    let room_preference = req.body.room_preference;
+
     //let status = "pending";
     // Create a new submission
     let sql = `INSERT INTO submission (primary_student_email, app_id, sub_status, room, room_preference)
