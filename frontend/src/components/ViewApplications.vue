@@ -34,7 +34,7 @@ module.exports = {
   data: function() {
     return {
       // This is just default data for testing
-      applications: [
+      applications: ""/*[
         {
           app_id: 1,
           app_name: "Squatting Fall 2010",
@@ -43,48 +43,7 @@ module.exports = {
           app_type: "squatting",
           app_term: 20172
         },
-        {
-          app_id: 2,
-          app_name: "Omega Fall 2018",
-          app_open: new Date("2018-03-20T05:00:00.000Z").toLocaleString(),
-          app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-          app_type: "omega",
-          app_term: 20172
-        },
-
-        {
-          app_id: 3,
-          app_name: "Traditional Fall 2018",
-          app_open: new Date("2018-01-26T05:00:00.000Z").toLocaleString(),
-          app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-          app_type: "traditional",
-          app_term: 20172
-        },
-        {
-          app_id: 4,
-          app_name: "Themed Fall 2018",
-          app_open: new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-          app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-          app_type: "themed",
-          app_term: 20172
-        },
-        {
-          app_id: 5,
-          app_name: "Off-Campus Fall 2018",
-          app_open: new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-          app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-          app_type: "offcampus",
-          app_term: 20172
-        },
-        {
-          app_id: 6,
-          app_name: "Nu Fall 2018",
-          app_open: new Date("2018-11-26T05:00:00.000Z").toLocaleString(),
-          app_close: new Date("2018-11-29T05:00:00.000Z").toLocaleString(),
-          app_type: "nu",
-          app_term: 20172
-        }
-      ]
+      ]*/
     };
   },
   methods: {
@@ -95,27 +54,9 @@ module.exports = {
       return now > open_date && now < close_date;
     },
     goToApplication: function(app) {
-      if (app.app_type=='squatting'){
-        window.location = '/#/Squatting'
-      }
-      else if (app.app_type=='omega'){
-        window.location = '/#/Omega'
-      }
-      else if (app.app_type=='traditional'){
-        // We should now use this instead of the uncommented section below 
-        console.log("sending app_id: " + app.app_id);
-        this.$router.push({ name: 'Traditional', params: { app_id: app.app_id }})
-      }
-      else if (app.app_type=='themed'){
-        window.location = '/#/Themed'
-      }
-      else if (app.app_type=='offcampus'){
-        window.location = '/#/OffCampus'
-      }
-      else if (app.app_type=='nu'){
-        window.location = '/#/Nu'
-      }
-
+      let capitalized = app.app_type.charAt(0).toUpperCase() + app.app_type.substr(1);
+      console.log("sending app_id: " + app.app_id);
+      this.$router.push({ name: capitalized, params: { app_id: app.app_id }})
     },
     updateApps: function() {
       let vm = this;

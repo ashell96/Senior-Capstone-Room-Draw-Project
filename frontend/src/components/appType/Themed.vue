@@ -9,13 +9,13 @@
 </h5>
 
 <p>Please enter your e-mail: 
-<input v-model="email" placeholder="Enter e-mail"> </p>
+<input v-model="myEmail" placeholder="Enter e-mail"> </p>
 
 <p>Please enter your roommate's e-mail: 
-<input v-model="email2" placeholder="Enter e-mail"> </p>
+<input v-model="roommateEmail" placeholder="Enter e-mail"> </p>
 
 
-<button v-on:click="sendtoApps()" class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendItt()" class="btn btn-info btn-sm">Submit</button>
 </div>
 
 </template>
@@ -28,10 +28,35 @@ module.exports = {
       roommateEmail: ""
     };
   },
-  props: ["curUserEmail"],
+  props: ["app_id","curUserEmail"],
   methods: {
-    sendtoApps: function() {
-      window.location = '/#/ViewSubmissions'
+    sendItt: function() {
+      let axios = require("axios");
+      let vm = this;
+      console.log({
+        "requester": vm.myEmail,
+          "requestee": vm.roommateEmail,
+          "app_id": this.$props.app_id,
+      })
+      /*
+
+      axios
+        .post("http://entropy7.nas.eckerd.edu:3000/submission/", {
+          "requester": vm.myEmail,
+          "requestee": vm.roommateEmail,
+          "app_id": this.$props.app_id,
+        })
+        .then(function(response) {
+          console.log(response);
+          // Do something on success
+          window.location = '/#/ViewSubmissions';
+        })
+        .catch(function(error) {
+          console.log(error);
+          alert(error);
+          // We need a better way of showing an error
+        })
+        */
     }
   }
 };
