@@ -1,3 +1,4 @@
+**Updated All Submissions**
 <template>
 <span>
     <h1 class="display-4">Application Submissions</h1>
@@ -17,6 +18,14 @@
    <button class="btn btn-info btn-md" v-on:click="ViewAppSubmissions(choice)">Submit</button>
 
     </div>
+    <div id="hi" v-for="item in submissions" :key="item.submission_id">
+                    <td id="student"> Student E-mail: {{item.primary_student_email}}  |   </td> 
+                    <td id="room">  Room: {{item.room}}  |   </td> 
+                    <td id="sub_status"> Status: {{item.sub_status}} </td>
+                    
+                    <br>
+                  
+                </div>
     </span>
 </template>
 
@@ -44,7 +53,7 @@ module.exports = {
         setTimeout(function(){vm.loadApplications()},1000);
       } else {
         axios
-              .post("http://entropy7.nas.eckerd.edu:3000/mySubmissions/", {
+              .get("http://entropy7.nas.eckerd.edu:3000/submissions/", {
                 myEmail: this.$props.curUserEmail
               })
               .then(function(response) {
@@ -62,3 +71,4 @@ module.exports = {
   }
 };
 </script>
+
