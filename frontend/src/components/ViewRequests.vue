@@ -1,18 +1,22 @@
 <template>
 <span>
+
 <h1>Viewing Rommate Request </h1>
-<p> You have received a roommate request from {{requester_email}}</p>
-<p>Room Request Submission ID: {{submission_id}}  </p>
-<button class="btn btn-info btn-md">Click to Accept</button>
-<br>
-<br>
-<button class="btn btn-info btn-md">Click to Deny</button>
+<p> You have received a roommate request from <b>{{requester_email}}</b></p>
+
+
                 <div id="hi" v-for="item in submissions" :key="item.submission_id">
-                    <td v-if="item.submission_id == submission_id" id="room"> Room: {{item.room}}</td>
-                    <br>
-                    <td v-if="item.submission_id == submission_id" id="sub_status"> Status: {{item.sub_status}}</td>
-                  
+                    <td v-if="item.submission_id == submission_id" id="room">{{requester_email}} is requesting you as
+                      a roomate for <b>{{item.room}}</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
+                        order to change this status, please respond to this request by clicking the 'Accept' or 'Deny' button.</td>  
+               
                 </div>
+                 <br>
+                 <button class="btn btn-info btn-md">Click to Accept</button>   
+                 <br>
+                 <br>
+                <button class="btn btn-info btn-md">Click to Deny</button>
+
 </span>
 
 </template>
