@@ -2,30 +2,35 @@
 <template>
 <span>
     <h1 class="display-4">Application Submissions</h1>
-    <div id="editor">
-  <select  class="form-control" id="sel1" v-model="choice">
-  <option disabled value="">Please select housing</option>
-  <option >Omega</option>
-  <option >Nu</option>
-  <option >Traditional (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
-  <option >Themed (Kappa/Zeta/Beta/Epsilon/Delta/Alpha/Gamma/Iota)</option>
-  <option >Sigma/West Lodge </option>
-  <option >Oberg Suites</option>
-  <option >Singles</option>
-  <option >Off-Campus Housing/Alta Mar</option>
- </select>
- <br>
-   <button class="btn btn-info btn-md" v-on:click="ViewAppSubmissions(choice)">Submit</button>
 
-    </div>
-    <div id="hi" v-for="item in submissions" :key="item.submission_id">
-                    <td id="student"> Student E-mail: {{item.primary_student_email}}  |   </td> 
-                    <td id="room">  Room: {{item.room}}  |   </td> 
-                    <td id="sub_status"> Status: {{item.sub_status}} </td>
+
+  <div id=  "table1">
+     <table class="table">
+       <thead>
+                <tr>
+                    <th scope="col">Requester E-mail</th>
+                    <th scope="col">Room Request</th>
+                    <th scope="col">Current Status</th>
+                    <th scope="col">Response</th>
+
                     
+                </tr>
+            </thead>
+            <tbody>
+               <tr v-for="item in submissions" :key="item.submission_id">
+                    <td id="student"> {{item.primary_student_email}}   </td> 
+                    <td id="room">   {{item.room}}   </td> 
+                    <td id="sub_status"> {{item.sub_status}} </td>
+                    <button v-on:click="sendToServer();sendtoApps()" class="btn btn-info btn-md"> Accept</button>
+                    &nbsp;
+                    <button v-on:click="sendToServer();sendtoApps()" class="btn btn-info btn-md">Deny</button>
+
                     <br>
                   
-                </div>
+               </tr>
+            </tbody>
+        </table>
+  </div>
     </span>
 </template>
 
