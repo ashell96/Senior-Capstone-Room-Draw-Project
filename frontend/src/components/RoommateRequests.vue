@@ -1,5 +1,6 @@
 <template>
 <span>
+    <br>
     <h2 >Currently Pending Roommate Requests:</h2>
     <div id="editor">
         <table class="table">

@@ -1,9 +1,10 @@
 <template>
   <div>
+      <br>
       <h1>Welcome to the housing tool</h1>
       <p>
           In order to use this tool you must sign in.
-          Click here to sign in.
+          Click <b>here</b> to sign in.
       </p>
       <p>
           As a student you can:
