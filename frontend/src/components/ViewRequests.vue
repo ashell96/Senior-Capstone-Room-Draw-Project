@@ -1,14 +1,14 @@
 <template>
 <span>
-
+<br>
 <h1>Viewing Rommate Request </h1>
 <p> You have received a roommate request from <b>{{requester_email}}</b></p>
 
 
                 <div id="hi" v-for="item in submissions" :key="item.submission_id">
                     <td v-if="item.submission_id == submission_id" id="room">{{requester_email}} is requesting you as
-                      a roomate for <b>{{item.room}}</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
-                        order to change this status, please respond to this request by clicking the 'Accept' or 'Deny' button.</td>  
+                      a roommate</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
+                        order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.</td>  
                
                 </div>
                  <br>
