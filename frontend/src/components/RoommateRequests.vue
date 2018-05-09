@@ -45,7 +45,7 @@ module.exports = {
   //send requester_id to ViewRequests
   ViewReq:function(app){
     this.$router.push({ name: 'ViewRequests', 
-    params: { requester_email: app.requester_email, request_id: app.request_id }});
+    params: { requester_email: app.requester_email, request_id: app.request_id, submission_id: app.submission_id }});
   },
    
   updateApps: function() {
