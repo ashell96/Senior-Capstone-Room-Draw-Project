@@ -86,7 +86,13 @@ app.get("/requests/:requestID" ,function(req, res){
     dbQuery(req,res,sql);
 });
 
+app.get("/requestsBySubmissionID/:submissionID" ,function(req, res){
+    const sql = "SELECT * FROM request WHERE submission_id = " + connection.escape(req.params.submissionID); 
+    dbQuery(req,res,sql);
+});
 
+
+//to be deleted
 app.post("/submission", function(req,res){
     
     // Assuming traditional
@@ -124,6 +130,8 @@ app.post("/submission", function(req,res){
     //console.log(req.body);
 })
 
+
+// to be deleted
 function determineAppType(app_id, callback){
    
     // Validate components
@@ -141,7 +149,7 @@ function determineAppType(app_id, callback){
 }
 
 
-
+// To be deleted
 function traditionalSubmission(requester, requestee, app_id, res) {
     console.log("starting traditonal sub");
     let status = "pending";
@@ -165,6 +173,7 @@ function traditionalSubmission(requester, requestee, app_id, res) {
         });
     });
 }
+
 
 app.post("/submission3", function(req,res){
     let requester = req.body.requester; // email
