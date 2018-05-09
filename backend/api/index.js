@@ -161,29 +161,6 @@ function traditionalSubmission(requester, requestee, app_id, res) {
     });
 }
 
-/*
-app.post("/submission2", function(req,res){
-    let requester = req.body.requester;
-    let requestee = req.body.requestee;
-    let app_id = req.body.app_id;
-    determineAppType(app_id, function(app_type){
-        if (app_type == 'squatting') console.log("Do squat");
-        else if (app_type == 'omega') console.log("Do omega");
-        else if (app_type == 'nu') console.log("Do nu");
-        else if (app_type == 'themed') console.log("Do theme");
-        else if (app_type == 'traditional') {
-            console.log("Do tradition");
-            traditionalSubmission(requester, requestee, app_id, res);
-        }
-        else if (app_type == 'off-campus') console.log("Do off-campus");
-        else {
-            res.error("Application type not known");
-        }
-
-    });
-});
-*/
-
 app.post("/submission3", function(req,res){
     let requester = req.body.requester; // email
     let requestees = req.body.requestee; // arr of emails
@@ -194,21 +171,6 @@ app.post("/submission3", function(req,res){
     console.log(requester, requestees, app_id, room, room_preference);
 
     everySubmission(requester, requestees, app_id, room, room_preference, res);
-    /*determineAppType(app_id, function(app_type){
-        if (app_type == 'squatting') console.log("Do squat");
-        else if (app_type == 'omega') console.log("Do omega");
-        else if (app_type == 'nu') console.log("Do nu");
-        else if (app_type == 'themed') console.log("Do theme");
-        else if (app_type == 'traditional') {
-            console.log("Do tradition");
-            traditionalSubmission(requester, requestee, app_id, res);
-        }
-        else if (app_type == 'off-campus') console.log("Do off-campus");
-        else {
-            res.error("Application type not known");
-        }
-
-    });*/
 });
 
 
@@ -247,5 +209,12 @@ function everySubmission(requester, requestees, app_id, room, room_preference, r
 app.post("/mySubmissions", function (req,res){
     const sql = "SELECT * FROM submission WHERE primary_student_email = " 
     + connection.escape(req.body.myEmail); 
+    dbQuery(req,res,sql);
+})
+
+app.post("/updateRequest", function(req,res){
+    let id = connection.escape(req.body.requestID);
+    let status = connection.escape(req.body.status);
+    const sql = `UPDATE request SET request_status = "${status}" WHERE request_id = ${id}`;
     dbQuery(req,res,sql);
 })

@@ -12,10 +12,10 @@
                
                 </div>
                  <br>
-                 <button class="btn btn-info btn-md">Click to Accept</button>   
+                 <button v-on:click="respondRequest('accepted')" class="btn btn-info btn-md">Click to Accept</button>   
                  <br>
                  <br>
-                <button class="btn btn-info btn-md">Click to Deny</button>
+                <button  v-on:click="respondRequest('denied')"  class="btn btn-info btn-md">Click to Deny</button>
 
 </span>
 
@@ -51,8 +51,23 @@ module.exports = {
               });
       }
    
-    }
-  },
+    },
+    respondRequest: function(statusUpdate){
+        axios
+          .post("http://entropy7.nas.eckerd.edu:3000/updateRequest/", {
+            requestID: this.$props.curUserEmail,
+            status: statusUpdate
+          })
+          .then(function(response) {
+            //vm.$set(vm, "submissions", response.data);
+            alert("Sent");
+            window.location.href += "#";
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      }
+    },
   created: function() {
     this.loadApplications();
   }
