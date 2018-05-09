@@ -11,6 +11,7 @@
                     <th scope="col">App ID:</th>
                     <th scope="col">Room:</th>
                     <th scope="col">Submission Status:</th>
+                    <th scope="col"> View Submission: </th>
                 </tr>
             </thead>
             <tbody>
@@ -22,7 +23,7 @@
                     <td id="app_id">{{item.app_id}}</td>
                     <td id="room">{{item.room}}</td>
                     <td id="sub_status">{{item.sub_status}}</td>
-
+                    <button  v-on:click="ViewSubs(item)" class="btn btn-info btn-md"> View Submission </button>
                 
                 </tr>
             </tbody>
@@ -41,6 +42,11 @@ module.exports = {
   },
   props: ["curUserEmail"],
   methods: {
+    //send requester_id to ViewRequests
+  ViewSubs:function(app){
+    this.$router.push({ name: 'ViewSubs', 
+    params: {submission_id: app.submission_id }});
+  },
     loadApplications: function() {
       let vm = this;
       if(this.$props.curUserEmail == "0"){
