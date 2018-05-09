@@ -5,17 +5,17 @@
 <p> You have received a roommate request from <b>{{requester_email}}</b></p>
 
 
-                <div id="hi" v-for="item in submissions" :key="item.submission_id">
-                    <td v-if="item.submission_id == submission_id" id="room">{{requester_email}} is requesting you as
-                      a roommate</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
-                        order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.</td>  
-               
-                </div>
-                 <br>
-                 <button v-on:click="respondRequest('accepted')" class="btn btn-info btn-md">Click to Accept</button>   
-                 <br>
-                 <br>
-                <button  v-on:click="respondRequest('denied')"  class="btn btn-info btn-md">Click to Deny</button>
+  <div id="hi" v-for="item in submissions" :key="item.submission_id">
+      <td v-if="item.submission_id == submission_id" id="room">{{requester_email}} is requesting you as
+        a roommate</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
+          order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.</td>  
+  
+  </div>
+    <br>
+    <button v-on:click="respondRequest('accepted')" class="btn btn-info btn-md">Click to Accept</button>   
+    <br>
+    <br>
+  <button  v-on:click="respondRequest('denied')"  class="btn btn-info btn-md">Click to Deny</button>
 
 </span>
 
@@ -40,7 +40,7 @@ module.exports = {
         setTimeout(function(){vm.loadApplications()},1000);
       } else {
         axios
-              .get("http://entropy7.nas.eckerd.edu:3000/submissions/", {
+              .get("http://entropy7.nas.eckerd.edu:3000/requests/", {
                 myEmail: this.$props.curUserEmail
               })
               .then(function(response) {
@@ -55,7 +55,7 @@ module.exports = {
     respondRequest: function(statusUpdate){
         axios
           .post("http://entropy7.nas.eckerd.edu:3000/updateRequest/", {
-            requestID: this.$props.curUserEmail,
+            requestID: this.$props.submission_id,
             status: statusUpdate
           })
           .then(function(response) {

@@ -81,6 +81,11 @@ app.get("/submissions/:submissionID" ,function(req, res){
     dbQuery(req,res,sql);
 });
 
+app.get("/requests/:requestID" ,function(req, res){
+    const sql = "SELECT * FROM submission WHERE submission_id = " + connection.escape(req.params.requestID); 
+    dbQuery(req,res,sql);
+});
+
 
 app.post("/submission", function(req,res){
     
