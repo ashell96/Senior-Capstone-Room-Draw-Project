@@ -6,7 +6,7 @@
 
 
   <div id="hi" v-for="item in submissions" :key="item.submission_id">
-      <td v-if="item.submission_id == submission_id" id="room">{{requester_email}} is requesting you as
+      <td v-if="item.request_id == request_id" id="room">{{requester_email}} is requesting you as
         a roommate</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
           order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.</td>  
   
@@ -28,11 +28,11 @@ module.exports = {
     return { 
     message: "",
     requester: this.$props.requester_email,
-    sub_ID: this.$props.submission_id,
+    request_id: this.$props.request_id,
     submissions:""
     };
   },
-  props:['requester_email', "curUserEmail", "submission_id"], 
+  props:['requester_email', "curUserEmail", "request_id"], 
   methods: {
   loadApplications: function() {
       let vm = this;
@@ -40,7 +40,7 @@ module.exports = {
         setTimeout(function(){vm.loadApplications()},1000);
       } else {
         axios
-              .get("http://entropy7.nas.eckerd.edu:3000/requests/", {
+              .get("http://entropy7.nas.eckerd.edu:3000/requests/" + this.$props.request_id, {
                 myEmail: this.$props.curUserEmail
               })
               .then(function(response) {
