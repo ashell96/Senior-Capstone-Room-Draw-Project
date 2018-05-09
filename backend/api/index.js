@@ -82,7 +82,7 @@ app.get("/submissions/:submissionID" ,function(req, res){
 });
 
 app.get("/requests/:requestID" ,function(req, res){
-    const sql = "SELECT * FROM request WHERE submission_id = " + connection.escape(req.params.requestID); 
+    const sql = "SELECT * FROM request WHERE request_id = " + connection.escape(req.params.requestID); 
     dbQuery(req,res,sql);
 });
 
