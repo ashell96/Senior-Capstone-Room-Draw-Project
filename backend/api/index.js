@@ -220,6 +220,6 @@ app.post("/mySubmissions", function (req,res){
 app.post("/updateRequest", function(req,res){
     let id = connection.escape(req.body.requestID);
     let status = connection.escape(req.body.status);
-    const sql = `UPDATE request SET request_status = "${status}" WHERE request_id = ${id}`;
+    const sql = `UPDATE request SET request_status = ${status} WHERE request_id = ${id}`;
     dbQuery(req,res,sql);
 })

@@ -1,24 +1,15 @@
 <template>
-<span>
-<br>
-<h1>Viewing Rommate Request </h1>
-<p> You have received a roommate request from <b>{{requester_email}}</b></p>
-
-
-  <div id="hi" v-for="item in submissions" :key="item.submission_id">
-      <td v-if="item.request_id == request_id" id="room">{{requester_email}} is requesting you as
-        a roommate</b>. The current status of this request is <b>{{item.sub_status}}</b>. In 
-          order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.</td>  
-  
-  </div>
-    <br>
-    <button v-on:click="respondRequest('accepted')" class="btn btn-info btn-md">Click to Accept</button>   
-    <br>
-    <br>
-  <button  v-on:click="respondRequest('denied')"  class="btn btn-info btn-md">Click to Deny</button>
-
-</span>
-
+	<div>
+		<br>
+		<h1>Viewing Rommate Request</h1>
+		<p>You have received a roommate request from <b>{{request.requester_email}}</b></p>
+		<div>
+			{{request.requester_email}} is requesting you as a roommate. The current status of this request is <b>{{request.request_status}}</b>. In order to change this status, please respond to this request by clicking the <b>'Accept'</b> or <b>'Deny'</b> button.
+		</div><br>
+		<button class="btn btn-info btn-md" v-on:click="respondRequest(1)">Click to Accept</button><br>
+		<br>
+		<button class="btn btn-info btn-md" v-on:click="respondRequest(0)">Click to Deny</button>
+	</div>
 </template>
 
 <script>
@@ -28,8 +19,9 @@ module.exports = {
     return { 
     message: "",
     requester: this.$props.requester_email,
-    request_id: this.$props.request_id,
-    submissions:""
+    //request_id: this.$props.request_id,
+    submissions:"",
+    request: ""
     };
   },
   props:['requester_email', "curUserEmail", "request_id"], 
@@ -45,6 +37,7 @@ module.exports = {
               })
               .then(function(response) {
                 vm.$set(vm, "submissions", response.data);
+                vm.$set(vm, "request", response.data[0]);
               })
               .catch(function(error) {
                 console.log(error);
@@ -53,10 +46,11 @@ module.exports = {
    
     },
     respondRequest: function(statusUpdate){
+      let answer = statusUpdate ? "accepted" : "denied";
         axios
           .post("http://entropy7.nas.eckerd.edu:3000/updateRequest/", {
-            requestID: this.$props.submission_id,
-            status: statusUpdate
+            requestID: this.$props.request_id,
+            status: answer
           })
           .then(function(response) {
             //vm.$set(vm, "submissions", response.data);
