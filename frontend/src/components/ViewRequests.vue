@@ -46,16 +46,15 @@ module.exports = {
    
     },
     respondRequest: function(statusUpdate){
+      let vm = this;
       let answer = statusUpdate ? "accepted" : "denied";
         axios
           .post("http://entropy7.nas.eckerd.edu:3000/updateRequest/", {
-            requestID: this.$props.request_id,
+            requestID: vm.$props.request_id,
             status: answer
           })
           .then(function(response) {
-            //vm.$set(vm, "submissions", response.data);
-            alert("Sent");
-            window.location.href += "#";
+            vm.$router.push({name:'RoommateRequests'});
           })
           .catch(function(error) {
             console.log(error);
