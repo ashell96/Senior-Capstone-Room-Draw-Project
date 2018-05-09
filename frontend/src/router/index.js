@@ -12,6 +12,7 @@ import RoommateRequests from '@/components/RoommateRequests'
 import ViewRequests from '@/components/ViewRequests'
 import AllSubmissions from '@/components/AllSubmissions'
 import ViewAllSubmissions from '@/components/ViewAllSubmissions'
+import ViewSubs from '@/components/ViewSubs'
 // App types
 import Omega from '@/components/appType/Omega'
 import OffCampus from '@/components/appType/OffCampus'
@@ -19,6 +20,7 @@ import Nu from '@/components/appType/Nu'
 import Themed from '@/components/appType/Themed'
 import Squatting from '@/components/appType/Squatting'
 import Traditional from '@/components/appType/Traditional'
+
 
 
 Vue.use(Router)
@@ -110,15 +112,21 @@ export default new Router({
             props: true
         },
         {
-        path: '/AllSubmissions',
-        name: 'AllSubmissions',
-        component: AllSubmissions,
-        props: true
+            path: '/AllSubmissions',
+            name: 'AllSubmissions',
+            component: AllSubmissions,
+            props: true
         },
         {
             path: '/ViewAllSubmissions',
             name: 'ViewAllSubmissions',
             component: ViewAllSubmissions,
+            props: true
+        },
+        {
+            path: '/ViewSubs',
+            name: 'ViewSubs',
+            component: ViewSubs,
             props: true
         }
     ]

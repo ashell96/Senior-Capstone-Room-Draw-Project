@@ -19,6 +19,7 @@
 <p>Roommate #5 <input v-model="requestees[3]" placeholder="Enter e-mail"> </p>
 <p>Roommate #6 <input v-model="requestees[4]" placeholder="Enter e-mail"> </p>
 <p>Roommate #7 <input v-model="requestees[5]" placeholder="Enter e-mail"> </p>
+<p>Roommate #8 <input v-model="requestees[6]" placeholder="Enter e-mail"> </p>
 <button v-on:click="sendItt()" class="btn btn-info btn-sm">Submit</button>
 </span>
 
