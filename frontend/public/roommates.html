@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script rsrc="./roommatees.js"></script>
+
+    <title>Roommate Pairing Tool</title>
+  </head>
+  <body>
+    
+    <main role="main" class="container">
+            <h1 class="mt-5">Roommate Pairing Tool</h1>
+            <textarea class="form-control" id="in" placeholder="Paste student data in the format:  StudentID, Q1 Value, Q2 Value, etc"></textarea>
+            <br>
+            <button type="button" id="b" onclick="run()" class="btn btn-primary">Improve</button>
+            Average Compatability: <span id="fit"> </span>
+            
+            <div id="results"></div>
+            <p class="lead">
+                Welcome to the roommate pairing tool. Please start by entering an even number of student to be paired.
+                Student information should be in the format of student ID followed by comma separate number values.
+                <br>Ex: <code>1373719,110,110,110,50,60,10,110,50,50,110</code>
+            </p>
+            <!-- <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+            -->
+    </main>
+
+</body>
+</html>
+
+<script>
+    let compatabilityCache = {};
+    let students;
+    pairings = [];
+        run = function () {
+            let data = document.body.querySelector('#in').value;
+            lines = data.split("\n");
+            for (let i = 0; i < lines.length; i++) {
+                lines[i] = lines[i].split(",");
+            }
+            students = lines;
+
+            if (pairings.length < 1){
+                for (let i = 0; i < students.length; i++) {
+                    pairings[i] = i;
+                }
+            }
+            console.log(students);
+            console.log(calculateAverageCompatability(pairings));
+           
+            for (let i = 0; i < 10000; i++){
+                // Slice to make a simple clone
+                let t = pairings.slice(0);
+                //for (let s = 0; s > (i %5) + 1; s++){
+                    swap(t);
+                    swap(t);
+                    swap(t);
+                //}
+                let p = calculateAverageCompatability(pairings);
+                if (calculateAverageCompatability(t) > p){
+                    pairings = t;
+                }
+            }
+            let status = document.body.querySelector("#fit");
+            status.innerText = calculateAverageCompatability(pairings);
+
+
+            console.log(calculateAverageCompatability(pairings));
+            printStudents();
+        }
+
+        function printStudents(){
+            let string = "";
+            string += "Roommates 1, Roommate 2, Compatability\n";
+            for (let i = 0; i < pairings.length; i+=2){
+                let student1 = students[pairings[i]];
+                let student2 = students[pairings[i+1]];
+                string += student1[0] + ", " + student2[0] + ", ";
+                string += calculateRoommateCompatability(i, i+1);
+                string += "\n";
+            }
+            
+            let status = document.body.querySelector("#results").innerText = string;
+        }
+
+        function swap(arr){
+            
+            // Swaps two random values in array;
+            const rand1 = Math.floor(Math.random() * arr.length); 
+            const rand2 = Math.floor(Math.random() * arr.length);
+
+            // /// calcualte if it's a good swap!
+            // const rVal1 = arr[rand1];
+            // const rVal2 = arr[rand2];
+            // let old1, old2, new1, new2, buddy1, buddy2;
+            // buddy1 = rVal1 % 2 == 1 ? rVal1-1 : rVal1+1;
+
+            // buddy1Val = arr[buddy1];
+
+            // old1 = calculateRoommateCompatability(rVal1, buddy1Val);
+            // new1 = calculateRoommateCompatability(rVal2, buddy1Val);
+
+            // buddy2 = rVal2 % 2 == 1 ? rVal2-1 : rVal2+1;
+            // buddy2Val = arr[buddy2];
+
+            // old2 = calculateRoommateCompatability(rVal2, buddy2Val);
+            // new2 = calculateRoommateCompatability(rVal1, buddy2Val);
+            ////////////
+            //debugger;
+            //if (new1 + new2 > old1 + old2){
+                let temp = arr[rand1];
+                arr[rand1] = arr[rand2];
+                arr[rand2] = temp;
+            //}
+        }
+
+        function calculateAverageCompatability(pairings) {
+            //debugger;
+            let total = 0;
+            for (let i = 0; i < pairings.length; i += 2) {
+                let s1_index = pairings[i];
+                let s2_index = pairings[i+1];
+                total += calculateRoommateCompatability(s1_index, s2_index);
+            }
+            let avg = total / (pairings.length / 2);
+            //console.log("Average compatability ", avg);
+            return avg;
+        }
+
+        function calculateRoommateCompatability(s1_index, s2_index) {
+            let s1 = students[s1_index];
+            let s2 = students[s2_index];
+            if (checkCache(s1_index,s2_index)){
+                return compatabilityCache[s1_index][s2_index];
+            }
+
+            if (s1.length != s2.length) {
+                throw "roommates don't have same number of questions";
+            }
+            let maxDiff = 100;
+            let diff = 0;
+            //i = 1 to skip ID column
+            for (let i = 1; i < s1.length; i++) {
+                diff += Math.abs(parseInt(s1[i]) - parseInt(s2[i]));
+            }
+            let averageDifference = diff / s1.length;
+            let answer = 1 - averageDifference /maxDiff;
+            //console.log("Compatability ", answer);
+            compatabilityCache[s1_index][s2_index] = answer;
+            return answer;
+        }
+        function checkCache(s1,s2){// s1 and s2 are index of students
+            if(compatabilityCache[s1] == undefined){
+                compatabilityCache[s1] = {};
+                return false;
+            }
+            if (compatabilityCache[s1][s2] > 0){
+                return true;
+            }
+        }
+</script>
