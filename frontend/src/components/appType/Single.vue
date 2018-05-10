@@ -4,10 +4,6 @@
 <h5>For More Information Please Visit: www.eckerd.edu/housing</h5>
 <h5>Please complete this application and submit it no later than 12 Noon Monday, March 20, 2018</h5>
 <h5><u>Late Applications WILL NOT be accepted.</u></h5>
-<p><b>After Room Draw, if one member withdraws from the unit, the remaining members will be given the option 
-    to fill the space with another person of equal or greater point value within five business days. If after 
-    five business days the vacant space has not been filled, the remaining students <u>will lose</u> the right to 
-    occupy the unit. When two or more persons withdraw, at any time, from the unit the remaining members <u>will lose</u> the right to occupy the unit.</b></p>
 
 <p>Please enter your e-mail: 
 <input v-model="email" placeholder="Enter e-mail"> </p>

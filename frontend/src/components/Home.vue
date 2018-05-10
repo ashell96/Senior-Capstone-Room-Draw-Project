@@ -3,14 +3,14 @@
       <br>
       <h1>Welcome to the housing tool</h1>
       <p>
-          In order to use this tool you must sign in.
-          Click <b>here</b> to sign in.
+          In order to use this tool you must <b>sign in</b>.
+          
       </p>
       <p>
           As a student you can:
           * <router-link to="/viewApps">See the open applications</router-link>
           
-          * See all of the submissions you have made
+          * See all of the submissions you have made*
           
       </p>
       <p>

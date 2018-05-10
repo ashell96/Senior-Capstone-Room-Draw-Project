@@ -16,7 +16,7 @@
 <p>Are you squatting with your current roommate?
 <input type="checkbox" v-model="checkYes"> Yes
 <input type="checkbox" v-model="checkNo"> No</p>
-<p> Please enter your current roommate's e-mail: 
+<p v-if="checkYes"> Please enter your current roommate's e-mail: 
 <input v-model="currentRoommateEmail" placeholder="Enter e-mail"> </p>
 
 <template v-if="checkNo">

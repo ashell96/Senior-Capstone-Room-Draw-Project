@@ -12,9 +12,6 @@
 <p>Please enter your e-mail: 
 <input v-model="myEmail" placeholder="Enter e-mail"> </p>
 <br>
-Renovated Apartment?: 
-<input type="checkbox" v-model="renovated">
-</p>
 
   <p> Please enter the e-mails of the other 3 roommates</p>
   <p> Roommate 2 <input v-model="requestees[0]" placeholder="Roommate #2 email"> </p>

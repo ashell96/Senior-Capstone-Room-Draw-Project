@@ -20,6 +20,7 @@ import Nu from '@/components/appType/Nu'
 import Themed from '@/components/appType/Themed'
 import Squatting from '@/components/appType/Squatting'
 import Traditional from '@/components/appType/Traditional'
+import Single from '@/components/appType/Single'
 
 
 
@@ -91,6 +92,11 @@ export default new Router({
             path: "/themed",
             name: 'Themed',
             component: Themed,
+            props: true
+        },{
+            path: "/single",
+            name: 'Single',
+            component: Single,
             props: true
         },
         {

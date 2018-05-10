@@ -27,9 +27,9 @@
 
 <template v-else>
 <p> Please enter the e-mails of the other 3 roommates</p>
-   <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
-   <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
-   <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
+   <p> Roommate 2 <input v-model="requestees[0]" placeholder="Roommate #2 email"> </p>
+   <p> Roommate 3 <input v-model="requestees[1]" placeholder="Roommate #3 email"></p>
+   <p> Roommate 4 <input v-model="requestees[2]" placeholder="Roommate #4 email"></p>
 </template>
 </template>
 
@@ -41,9 +41,9 @@
         </template>
 <template v-else>
 <p> Please enter the e-mails of the other 3 roommates</p>
-   <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
-   <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
+   <p> Roommate 2 <input v-model="requestees[0]" placeholder="Roommate #2 email"> </p>
+   <p> Roommate 3 <input v-model="requestees[1]" placeholder="Roommate #3 email"></p>
+    <p> Roommate 4 <input v-model="requestees[2]" placeholder="Roommate #4 email"></p>
 </template>
 </template>
 
@@ -55,15 +55,15 @@
         </template>
 <template v-else>
 <p> Please enter the e-mails of the other 4 roommates</p>
-   <p> Roommate 2 <input v-model="roommateEmail2" placeholder="Roommate #2 email"> </p>
-   <p> Roommate 3 <input v-model="roommateEmail3" placeholder="Roommate #3 email"></p>
-    <p> Roommate 4 <input v-model="roommateEmail4" placeholder="Roommate #4 email"></p>
-    <p> Roommate 5 <input v-model="roommateEmail5" placeholder="Roommate #5 email"></p>
+   <p> Roommate 2 <input v-model="requestees[0]" placeholder="Roommate #2 email"> </p>
+   <p> Roommate 3 <input v-model="requestees[1]" placeholder="Roommate #3 email"></p>
+    <p> Roommate 4 <input v-model="requestees[2]" placeholder="Roommate #4 email"></p>
+    <p> Roommate 5 <input v-model="requestees[3]" placeholder="Roommate #5 email"></p>
 
 </template>
 </template>
 
-<button v-on:click="sendToServer();sendtoApps()" class="btn btn-info btn-sm">Submit</button>
+<button v-on:click="sendToServer()" class="btn btn-info btn-sm">Submit</button>
 
 </span>
 </template>
@@ -76,16 +76,31 @@ module.exports = {
       FourSingle: "",
       FivePerson: "",
       myEmail: this.$props.curUserEmail,
-      roommateEmail2: "",
-      roommateEmail3: "",
-      roommateEmail4: "",
-      roommateEmail5: "",
+      requestees: ["", "", "", ""]
     };
   },
-  props: ["curUserEmail"],
+  props: ["app_id", "curUserEmail"],
   methods: {
-    sendtoApps: function() {
-      window.location = '/#/ViewSubmissions'
+    sendtoServer: function() {
+      let axios = require("axios");
+      let vm = this;
+
+      axios
+        .post("http://entropy7.nas.eckerd.edu:3000/submission3/", {
+          "requester": vm.myEmail,
+          "requestee": vm.requestees,
+          "app_id": this.$props.app_id,
+        })
+        .then(function(response) {
+          console.log(response);
+          // Do something on success
+          window.location = '/#/ViewSubmissions';
+        })
+        .catch(function(error) {
+          console.log(error);
+          alert(error);
+          // We need a better way of showing an error
+        })
     }
   }
 };
